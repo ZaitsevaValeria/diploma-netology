@@ -73,8 +73,26 @@ h1 {
 .text-align-right {
   display: block;
   margin-left: 44px;
+  margin-top: 30px;
 }
 
 .store-buttons {
+  width: 100%;
   margin-top: 90px;
+}
+
+.btn {
+  display: block;
+  box-sizing: border-box;
+  height: 35px;
+  font-size: 8px;
+  line-height: auto;
+  text-transform: uppercase;
+  padding: 8px 80px;
+  background-color: #5e42b0;
+  border-radius: 18px;
+}
+
+.appstore-btn {
+  background-image: url("");
 }
