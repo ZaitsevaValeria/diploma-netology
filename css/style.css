@@ -6,10 +6,9 @@ body {
 
 .header-main {
   position: relative;
-  background-image: url("img/find-contact_960.jpg");
+  background-image: url("img/football_767.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-color: #0a0e34;
 }
 
@@ -25,4 +24,5 @@ body {
   width: 133px;
   height: 36px;
   fill: #ffffff;
+  text-align: center;
 }
