@@ -1,14 +1,22 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .header-main {
   position: relative;
   background-image: url("img/football_767.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: #0a0e34;
 }
 
@@ -21,13 +29,12 @@ body {
   left: 0;
   background-color: #0a0e34;
   opacity: 0.9;
-  z-index: 2;
+  z-index: 1;
 }
 
-.logo {
-  text-decoration: none;
-  color: #ffffff;
-  text-align: center;
+.logo-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .surfase-logo-text {
@@ -35,5 +42,5 @@ body {
   width: 133px;
   height: 36px;
   fill: #ffffff;
-  z-index: 3;
+  z-index: 2;
 }
