@@ -24,11 +24,16 @@ body {
   z-index: 2;
 }
 
+.logo {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
 .surfase-logo-text {
   position: relative;
   width: 133px;
   height: 36px;
   fill: #ffffff;
-  text-align: center;
   z-index: 3;
 }
