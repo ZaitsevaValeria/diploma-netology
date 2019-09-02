@@ -94,5 +94,11 @@ h1 {
 }
 
 .appstore-btn {
-  background-image: url("");
+  display: block;
+  background-image: url("../img/apple_logo_black.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+  padding-left: 30px;
+
 }
