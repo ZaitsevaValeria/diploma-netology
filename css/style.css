@@ -15,14 +15,20 @@ body {
 .header-main::after {
   content: "";
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: #0a0e34;
   opacity: 0.9;
-  z-index: 3;
+  z-index: 2;
 }
 
 .surfase-logo-text {
+  position: relative;
   width: 133px;
   height: 36px;
   fill: #ffffff;
   text-align: center;
+  z-index: 3;
 }
