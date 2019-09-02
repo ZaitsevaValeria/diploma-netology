@@ -7,6 +7,7 @@ body {
 .header-main {
   background-image: url("img/football_767.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-color: #0a0e34;
 }
