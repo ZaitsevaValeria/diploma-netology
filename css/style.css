@@ -17,7 +17,7 @@ body {
   content: "";
   position: absolute;
   background-color: #0a0e34;
-  opacity: 10%;
+  opacity: 0.9;
   z-index: 3;
 }
 
