@@ -4,7 +4,15 @@ body {
   font-family: font-family: 'Open Sans', sans-serif;
 }
 
-svg {
+.header-main {
+  background-image: url("img/football_767.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0a0e34;
+}
+
+
+.surfase-logo-text {
   width: 133px;
   height: 36px;
   fill: #ffffff;
