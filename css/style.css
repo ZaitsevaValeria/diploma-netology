@@ -12,15 +12,27 @@ a {
   color: #ffffff;
 }
 
-.header-main {
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+}
+
+
+.header {
   position: relative;
+  padding-top: 33px;
   background-image: url("img/football_767.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #0a0e34;
 }
 
-.header-main::after {
+.header::after {
   content: "";
   position: absolute;
   top: 0;
@@ -32,8 +44,11 @@ a {
   z-index: 1;
 }
 
-.logo-wrapper {
+.header-wrapper{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
