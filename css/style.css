@@ -170,9 +170,16 @@ h1 {
   padding-top: 50px;
 }
 
-.point:nth-of-type(3) {
+.point-light {
   background-color: #5e42b0;
   padding-top: 50px;
+  color: #ffffff;
+}
+
+.point-dark {
+  background-color: #090c35;
+  padding-top: 50px;
+  color: #ffffff;
 }
 
 .point-caption {
@@ -189,6 +196,10 @@ h1 {
   font-weight: bold;
   line-height: 2.4;
   color:#000000;
+}
+
+.point-dark .point-number {
+  color: #8765dd;
 }
 
 .point-number::after, .point-number-three::after {
