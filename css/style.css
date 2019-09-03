@@ -13,6 +13,10 @@ a {
   color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*.container {
   width: 280px;
   margin-left: auto;
@@ -44,20 +48,26 @@ a {
 
 .header-wrapper {
   position: relative;
-  display: flex;
+/*  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   width: 280px;
   margin-left: auto;
   margin-right: auto;
   z-index: 5;
 }
 
-.surfase-logo-text {
+.logo-wrapper {
   width: 133px;
-  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.surfase-logo-text {
+  /*width: 133px;
+  height: 36px;*/
   fill: #ffffff;
 }
 
@@ -67,7 +77,6 @@ h1 {
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 135px;
-
 }
 
 .text-align-right {
@@ -93,6 +102,10 @@ h1 {
   border-radius: 18px;
 }
 
+.btn:nth-of-type(n+2) {
+  margin-bottom: 14px;
+}
+
 .appstore-btn {
   display: block;
   background-image: url("../img/apple_logo_black.svg");
@@ -100,5 +113,6 @@ h1 {
   background-position: left center;
   background-size: 20px;
   padding-left: 30px;
+
 
 }
