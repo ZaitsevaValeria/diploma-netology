@@ -112,13 +112,18 @@ h1 {
 /* Main*/
 
 .persons {
-  width: 280px;
-  padding-top: 20px;
+/*width: 280px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
+
+}
+
+.person-unit {
+  padding-top: 20px;
 }
 
 .person-name {
+  padding-left: 20px;
   font-size: 50px;
   line-height: 1.2;
   color: #e7e7e7;
@@ -126,16 +131,93 @@ h1 {
   font-weight: bold;
 }
 
-.person-content-one::before {
-  width: 192px;
+.person-content {
+  position: relative;
+  padding-top: 281px;
+}
+
+.person-content::before {
+  content: "";
+  position: absolute;
+  width: 280px;
   height: 281px;
   margin-top: 15px;
-  background-image: url("../img/footballer_192.png");
+  top: 0;
+  left: 20px;
+  /*background-image: url("../img/footballer_192.png");*/
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
 }
 
+.person-content-one::before {
+  background-image: url("../img/footballer_192.png");
+}
+
+.person-content-two::before {
+  background-image: url("../img/basketballer_302.png");
+}
+
 .point {
-  margin-top: 25px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.point:nth-of-type(2) {
+  background-color: #f5f4f9;
+  padding-top: 50px;
+}
+
+.point:nth-of-type(3) {
+  background-color: #5e42b0;
+  padding-top: 50px;
+}
+
+.point-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.point-number {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2.4;
+  color:#000000;
+}
+
+.point-number::after, .point-number-three::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 15px;
+  height: 4px;
+  border-radius: 15px;
+  background-color: #5e42b0;
+}
+
+.point-number-three::after {
+  background-color: #ffffff;
+}
+
+.point-name {
+  margin-left: 8px;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1.5;
+  color:#c1c1c1;
+}
+
+.point-text {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.2;
+  padding-left: 20px;
+  padding-right: 20px;
 }
