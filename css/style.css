@@ -17,13 +17,6 @@ img {
   max-width: 100%;
 }
 
-/*.container {
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-
 .header {
   position: relative;
   padding-top: 33px;
@@ -31,6 +24,7 @@ img {
   background-image: url("../img/football_767.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   background-color: #0a0e34;
 }
 
@@ -91,7 +85,7 @@ h1 {
 }
 
 .btn {
-  display: block;
+  display: flex;
   box-sizing: border-box;
   height: 35px;
   font-size: 8px;
@@ -103,16 +97,14 @@ h1 {
 }
 
 .btn:nth-of-type(n+2) {
-  margin-bottom: 14px;
+  margin-top: 14px;
 }
 
-.appstore-btn {
-  display: block;
-  background-image: url("../img/apple_logo_black.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 20px;
-  padding-left: 30px;
+.btn-logo {
+  width: 22px;
+  fill: #ffffff;
+}
 
-
+.btn-text {
+  margin-left: 7px;
 }
