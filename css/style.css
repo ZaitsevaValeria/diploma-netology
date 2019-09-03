@@ -108,3 +108,34 @@ h1 {
 .btn-text {
   margin-left: 7px;
 }
+
+/* Main*/
+
+.persons {
+  width: 280px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person-name {
+  font-size: 50px;
+  line-height: 1.2;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.person-content-one::before {
+  width: 192px;
+  height: 281px;
+  margin-top: 15px;
+  background-image: url("../img/footballer_192.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.point {
+  margin-top: 25px;
+}
