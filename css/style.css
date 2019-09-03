@@ -13,10 +13,6 @@ a {
   color: #ffffff;
 }
 
-img {
-  max-width: 100%;
-}
-
 .header {
   position: relative;
   padding-top: 33px;
@@ -109,13 +105,14 @@ h1 {
   margin-left: 7px;
 }
 
+
 /* Main*/
+/*Section-1*/
 
 .persons {
 /*width: 280px;
   margin-left: auto;
   margin-right: auto;*/
-
 }
 
 .person-unit {
@@ -231,4 +228,72 @@ h1 {
   line-height: 1.2;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+/*Section-2*/
+
+.motivation-image {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.motivation-image-all {
+  width: 100%;
+}
+
+.motivation-image::before {
+  content: "01";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 20px;
+  bottom: -7px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  padding: 28px;
+  color: #ffffff;
+  background-color: #5e42b0;
+}
+
+.motivation-image-second::before {
+  content: "02";
+}
+
+.motivation-image-third::before {
+  content: "03";
+}
+
+.motivation-image::after {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  left: 47px;
+  width: 15px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #8f7bc8;
+}
+
+.motivation-content {
+  padding: 37px 20px 75px;
+}
+
+.motivation-caption {
+  font-size: 28px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #e7e7e7
+}
+
+.motivation-text {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+
 }
