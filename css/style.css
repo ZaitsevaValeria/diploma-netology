@@ -55,7 +55,7 @@ a {
   margin-right: auto;
 }
 
-.surfase-logo-text {
+.surface-logo-text {
   /*width: 133px;
   height: 36px;*/
   fill: #ffffff;
@@ -295,5 +295,85 @@ h1 {
   font-size: 16px;
   line-height: 1.25;
   color: #000000;
+}
 
+.footer {
+  position: relative;
+  background-image: url("../img/game_767.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #0a0e34;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0a0e34;
+  opacity: 0.9;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 5;
+  padding: 100px 20px 10px;
+}
+
+.download-app-logo {
+  box-sizing: border-box;
+  width: 72px;
+  height: 72px;
+  padding: 12px 6px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #7751db, #5e3db3, #50329c);
+}
+
+.surface-logo {
+  width: 56px;
+  height: 48px;
+  fill: #ffffff;
+  text-align: center;
+}
+
+.footer-cta-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 76px;
+}
+
+.download-app-action {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.download-app-description {
+  font-size: 14px;
+  font-weight: bold;
+  color: #9b8ec1;
+  text-transform: uppercase;
+}
+
+.footer-logo-wrapper {
+  width: 134px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.footer-surface-logo-text {
+  fill:#ffffff;
+  width: 134px;
+  height: 36px;
 }
