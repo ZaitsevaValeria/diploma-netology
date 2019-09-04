@@ -135,12 +135,14 @@ h1 {
 .person-content::before {
   content: "";
   position: absolute;
+  display: block;
   width: 280px;
   height: 281px;
   margin-top: 15px;
   top: 0;
-  left: 20px;
-  /*background-image: url("../img/footballer_192.png");*/
+  left: 50%;
+  margin-left: -140px;
+  /*left: calc(50%-280px/2);*/
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
