@@ -75,15 +75,19 @@ h1 {
 }
 
 .store-buttons {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 100%;
   margin-top: 90px;
 }
 
 .btn {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   box-sizing: border-box;
+  width: 280px;
   height: 35px;
-
   padding: 8px 80px;
   background-color: #5e42b0;
   border-radius: 18px;
@@ -118,6 +122,7 @@ h1 {
 }
 
 .person-name {
+  margin-bottom: 15px;
   padding-left: 20px;
   font-size: 50px;
   line-height: 1.2;
@@ -138,7 +143,6 @@ h1 {
   display: block;
   width: 280px;
   height: 281px;
-  margin-top: 15px;
   top: 0;
   left: 50%;
   margin-left: -140px;
@@ -160,24 +164,20 @@ h1 {
   max-width: 100%;
   padding-bottom: 50px;
   background-color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .point:nth-of-type(2) {
   background-color: #f5f4f9;
-  padding-top: 50px;
 }
 
 .point-light {
   background-color: #5e42b0;
-  padding-top: 50px;
   color: #ffffff;
 }
 
 .point-dark {
   background-color: #090c35;
-  padding-top: 50px;
   color: #ffffff;
 }
 
@@ -382,8 +382,167 @@ h1 {
   margin-top: 80px;
 }
 
-/*
+
 @media (min-width: 641px) and (max-width: 960px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 90px;
+    background-image: url("../images/football_1280.jpg");
+  }
+
+  .header-wrapper {
+    width: 90%; /*703px*/
+    max-width: 703px;
+  }
+
+  .logo-wrapper {
+    width: 204px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .surface-logo-text {
+    width: 204px;
+    height: 56px;
+    fill: #ffffff;
+  }
+
+/* Проценты рассчитаны от ширины родительского контейнера .header-wrapper (width: 703px)*/
+  h1 {
+    font-size: 64px;
+    margin-top: 180px;
+    margin-left: 5%; /*35px*/
+  }
+
+  .text-align-right {
+    margin-left: 15.4%; /*108px*/
+    margin-top: 30px;
+  }
+
+  .store-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 44%; /*310px*/
+    height: 11%; /*77px*/
+    padding: 2.3% 5.8% 2.7%; /*16px 41px 19px*/
+    border-radius: 40px;
+  }
+
+  .btn:nth-of-type(n+2) {
+    margin-top: 0px;
+  }
+
+/* Проценты рассчитаны от ширины родителя .btn (width: 310px)*/
+  .btn-logo {
+    width: 13%; /*40px*/
+    fill: #ffffff;
+  }
+
+  .btn-text {
+    margin-left: 9%; /*28px*/
+    font-size: 14px;
+
+  }
+
+/*Main*/
+/*Section-1*/
+
+.person-unit {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 86px; /*px*/
+  }
+
+.person-name {
+    padding-left: 292px;
+    font-size: 80px;
+  }
+
+.person-name-two {
+    padding-left: 31px;
+}
+
+.person-content {
+    max-width: 100%;
+    position: relative;
+    padding-top: 0px;
+  }
+
+.person-content::before {
+    width: 65vw; /*496px*/
+    height: 91vw; /*699px*/
+    top: -15%; /*px*/
+    left: -20%;
+    margin-left: 0px;
+  }
+
+.person-content-one::before {
+    background-image: url("../images/footballer_497.png");
+  }
+
+.person-content-two::before {
+    width: 57vw; /*436px*/
+    height: 74vh; /*565px*/
+    top: -20%; /*px*/
+    left: 44%;
+    background-image: url("../images/basketballer_436.png");
+  }
+
+.point {
+    max-width: 100%;
+    padding-bottom: 36px;
+    padding-top: 40px;
+  }
+
+  .point-caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 292px;
+    padding-right: 33px;
+  }
+
+.point-caption-two {
+    padding-left: 31px;
+    padding-right: 310px;
+  }
+
+  .point-number {
+    font-size: 18px;
+    line-height: 1.9;
+    font-weight: bold;
+  }
+
+  .point-number::after, .point-number-three::after {
+    top: 28px;
+    width: 21px;
+    height: 4px;
+    border-radius: 15px;
+  }
+
+  .point-name {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .point-text {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 292px;
+    padding-right: 33px;
+  }
+
+  .point-text-two {
+    padding-left: 31px;
+    padding-right: 310px;
+  }
 
 
-}*/
+
+}
