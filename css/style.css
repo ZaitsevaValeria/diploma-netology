@@ -451,25 +451,26 @@ h1 {
 /*Main*/
 /*Section-1*/
 
+/* Проценты рассчитаны от ширины width: 768px)*/
+
 .person-unit {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 86px; /*px*/
+    padding-top: 86px; /*86px*/
   }
 
 .person-name {
-    padding-left: 292px;
+    padding-left: 38%; /*292px*/
     font-size: 80px;
   }
 
 .person-name-two {
-    padding-left: 31px;
+    padding-left: 4%; /*31px*/
 }
 
 .person-content {
     max-width: 100%;
-    position: relative;
     padding-top: 0px;
   }
 
@@ -489,7 +490,7 @@ h1 {
     width: 57vw; /*436px*/
     height: 74vh; /*565px*/
     top: -20%; /*px*/
-    left: 44%;
+    left: 47%;
     background-image: url("../images/basketballer_436.png");
   }
 
@@ -503,13 +504,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-left: 292px;
-    padding-right: 33px;
+    padding-left: 38%; /*292px*/
+    padding-right: 4%; /*31px*/
   }
 
 .point-caption-two {
-    padding-left: 31px;
-    padding-right: 310px;
+    padding-left: 4%; /*31px*/
+    padding-right: 40%; /*31px*/
   }
 
   .point-number {
@@ -534,13 +535,13 @@ h1 {
     margin-top: 30px;
     font-size: 18px;
     line-height: 1.5;
-    padding-left: 292px;
-    padding-right: 33px;
+    padding-left: 38%; /*292px*/
+    padding-right: 4%; /*31px*/
   }
 
   .point-text-two {
-    padding-left: 31px;
-    padding-right: 310px;
+    padding-left: 4%; /*31px*/
+    padding-right: 40%; /*310px*/
   }
 
 
