@@ -127,6 +127,7 @@ h1 {
 }
 
 .person-content {
+  max-width: 100%;
   position: relative;
   padding-top: 281px;
 }
@@ -154,6 +155,7 @@ h1 {
 }
 
 .point {
+  max-width: 100%;
   padding-bottom: 50px;
   background-color: #ffffff;
   padding-top: 20px;
@@ -229,8 +231,12 @@ h1 {
 }
 
 /*Section-2*/
+.motivation-unit {
+  max-width: 100%;
+}
 
 .motivation-image {
+  max-width: 100%;
   position: relative;
   background-color: #ffffff;
 }
@@ -296,6 +302,7 @@ h1 {
 }
 
 .footer {
+  max-width: 100%;
   position: relative;
   background-image: url("../images/game_767.jpg");
   background-repeat: no-repeat;
@@ -313,12 +320,19 @@ h1 {
   bottom: 0;
   background-color: #0a0e34;
   opacity: 0.9;
+  max-width: 100%;
 }
 
 .footer-container {
+  width: 280px;
+  box-sizing: border-box;
+  min-width: 280px;
   position: relative;
   z-index: 5;
-  padding: 100px 20px 10px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .download-app-logo {
@@ -366,8 +380,8 @@ h1 {
   margin-top: 80px;
 }
 
-
+/*
 @media (min-width: 641px) and (max-width: 960px) {
 
 
-}
+}*/
