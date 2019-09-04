@@ -484,13 +484,23 @@ h1 {
     }
 
   .person-content-two::before {
-      width: 436px; /*691px надо 991*/
-      height: 565px; /*568px надо 815*/
+      width: 56.7vw; /*436px*/
+      height: 73.5vw; /*565px*/
       top: -20%; /*px*/
-      right: 331px;
-      background-image: url("../images/basketballer_436.png");
+      left: 331px;
+      background-image: url("../images/basketballer_691.png");
       overflow: hidden;
     }
+
+
+    .person-content-two::before {
+        width: 56.7vw; /*436px*/
+        height: 73.5vw; /*565px*/
+        top: -20%; /*px*/
+        left: 331px;
+        background-image: url("../images/basketballer_436.png");
+        overflow: hidden;
+      }
 
     .point {
       max-width: 100%;
