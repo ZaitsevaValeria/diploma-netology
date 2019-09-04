@@ -384,6 +384,10 @@ h1 {
 
 
 @media (min-width: 641px) and (max-width: 960px) {
+  .body {
+    min-width: 768px;
+  }
+
   .header {
     padding-top: 40px;
     padding-bottom: 90px;
@@ -407,12 +411,11 @@ h1 {
     fill: #ffffff;
   }
 
-/* Проценты рассчитаны от ширины родительского контейнера .header-wrapper (width: 703px)*/
   h1 {
     font-size: 64px;
     margin-top: 180px;
     margin-left: 5%; /*35px*/
-  }
+  } /* Проценты рассчитаны от ширины родительского контейнера .header-wrapper (width: 703px)*/
 
   .text-align-right {
     margin-left: 15.4%; /*108px*/
@@ -436,114 +439,147 @@ h1 {
     margin-top: 0px;
   }
 
-/* Проценты рассчитаны от ширины родителя .btn (width: 310px)*/
+
   .btn-logo {
     width: 13%; /*40px*/
     fill: #ffffff;
-  }
+  }  /* Проценты рассчитаны от ширины родителя .btn (width: 310px)*/
 
   .btn-text {
     margin-left: 9%; /*28px*/
     font-size: 14px;
-
   }
 
-/*Main*/
-/*Section-1*/
+  .person-unit {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-top: 86px; /*86px*/
+  }  /* Проценты рассчитаны от ширины width: 768px)*/
 
-/* Проценты рассчитаны от ширины width: 768px)*/
+  .person-name {
+      padding-left: 38%; /*292px*/
+      font-size: 80px;
+    }
 
-.person-unit {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-top: 86px; /*86px*/
+  .person-name-two {
+      padding-left: 4%; /*31px*/
   }
 
-.person-name {
-    padding-left: 38%; /*292px*/
-    font-size: 80px;
-  }
+  .person-content {
+      width: 100%;
+      padding-top: 0px;
+    }
 
-.person-name-two {
-    padding-left: 4%; /*31px*/
-}
+  .person-content::before {
+      width: 496px; /*496px*/
+      height: 699px; /*699px*/
+      top: -15%; /*px*/
+      left: -20%;
+      margin-left: 0px;
+    }
 
-.person-content {
-    max-width: 100%;
-    padding-top: 0px;
-  }
+  .person-content-one::before {
+      background-image: url("../images/footballer_497.png");
+    }
 
-.person-content::before {
-    width: 65vw; /*496px*/
-    height: 91vw; /*699px*/
-    top: -15%; /*px*/
-    left: -20%;
-    margin-left: 0px;
-  }
+  .person-content-two::before {
+      width: 436px; /*691px надо 991*/
+      height: 565px; /*568px надо 815*/
+      top: -20%; /*px*/
+      right: 331px;
+      background-image: url("../images/basketballer_436.png");
+      overflow: hidden;
+    }
 
-.person-content-one::before {
-    background-image: url("../images/footballer_497.png");
-  }
+    .point {
+      max-width: 100%;
+      padding-bottom: 36px;
+      padding-top: 40px;
+    }
 
-.person-content-two::before {
-    width: 57vw; /*436px*/
-    height: 74vh; /*565px*/
-    top: -20%; /*px*/
-    left: 47%;
-    background-image: url("../images/basketballer_436.png");
-  }
+    .point-caption {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding-left: 38%; /*292px*/
+      padding-right: 4%; /*31px*/
+    }
 
-.point {
-    max-width: 100%;
-    padding-bottom: 36px;
-    padding-top: 40px;
-  }
+    .point-caption-two {
+      padding-left: 4%; /*31px*/
+      padding-right: 40%; /*31px*/
+    }
 
-  .point-caption {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-left: 38%; /*292px*/
-    padding-right: 4%; /*31px*/
-  }
+    .point-number {
+      font-size: 18px;
+      line-height: 1.9;
+      font-weight: bold;
+    }
 
-.point-caption-two {
-    padding-left: 4%; /*31px*/
-    padding-right: 40%; /*31px*/
-  }
+    .point-number::after, .point-number-three::after {
+      top: 28px;
+      width: 21px;
+      height: 4px;
+      border-radius: 15px;
+    }
 
-  .point-number {
-    font-size: 18px;
-    line-height: 1.9;
-    font-weight: bold;
-  }
+    .point-name {
+      font-size: 32px;
+      line-height: 1.1;
+    }
 
-  .point-number::after, .point-number-three::after {
-    top: 28px;
-    width: 21px;
-    height: 4px;
-    border-radius: 15px;
-  }
+    .point-text {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 1.5;
+      padding-left: 38%; /*292px*/
+      padding-right: 4%; /*31px*/
+    }
 
-  .point-name {
-    font-size: 32px;
-    line-height: 1.1;
-  }
+    .point-text-two {
+      padding-left: 4%; /*31px*/
+      padding-right: 40%; /*310px*/
+    }
 
-  .point-text {
-    margin-top: 30px;
-    font-size: 18px;
-    line-height: 1.5;
-    padding-left: 38%; /*292px*/
-    padding-right: 4%; /*31px*/
-  }
+    .motivation-unit {
+      min-width: 768px;
+      max-width: 100%;
+    }
 
-  .point-text-two {
-    padding-left: 4%; /*31px*/
-    padding-right: 40%; /*310px*/
-  }
+    .motivation-image {
+      width: 100%;
+    }
+
+    .motivation-image::before {
+      width: 116px;
+      height: 116px;
+      left: 31px;
+      bottom: -30px;
+      font-size: 24px;
+      line-height: 1.4;
+      padding: 42px;
+    }
+
+    .motivation-image::after {
+      bottom: 10px;
+      left: 74px;
+      width: 25px;
+      height: 5px;
+    }
 
 
+    .motivation-content {
+      padding: 85px 20px 75px;
+    }
+
+    .motivation-caption {
+      font-size: 80px;
+    }
+
+    .motivation-text {
+      margin-top: 40px;
+      font-size: 24px;
+    }
 
 }
