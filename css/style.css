@@ -790,5 +790,78 @@ h1 {
     padding-right: 973px; /*973px*/  }
 
 
+  .motivation-unit {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1920px;
+    max-width: 100%;
+    height: 730px;
+  }
+
+  .motivation-image {
+    width: 50%;
+    height: 730px;
+    overflow: hidden;
+  }
+
+  .motivation-image-all {
+    width: auto;
+    height: 730px;
+    max-width: none;
+  }
+
+  .motivation-image-second {
+    order: 1;
+  }
+
+  .motivation-image::before {
+    /*content: "01";
+    display: block;
+    box-sizing: border-box;
+    position: absolute; */
+    width: 168px;
+    height: 168px;
+    left: 876px; /*50%width-168/2*/
+    bottom: 281px; /*50%height-168/2*/
+    font-size: 24px;
+    padding: 60px 70px 75px;
+  }
+
+/*  .motivation-image-second::before {
+    content: "02";
+  }
+
+  .motivation-image-third::before {
+    content: "03";
+  } */
+
+  .motivation-image::after {
+    content: "";
+    position: absolute;
+    bottom: 68px;
+    left: 90px;
+    width: 24px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #8f7bc8;
+  }
+
+  .motivation-content {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 260px 196px 240px 128px;
+  }
+
+  .motivation-caption {
+    font-size: 80px;
+  }
+
+  .motivation-text {
+    margin-top: 76px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+
 
 }
