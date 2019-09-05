@@ -244,8 +244,10 @@ h1 {
   background-color: #ffffff;
   overflow: hidden;
 }
-
-.motivation-image-all {
+/*!!!!position relative */
+.motivation-image-all-first {
+  position: relative;
+  left: -32%;
   height: 109.6vw;
 }
 
@@ -557,8 +559,15 @@ h1 {
 
   .motivation-image-all {
     width: 100%;
-    height: 100%;
+    min-width: 768px;
+    height: auto;
   }
+
+  .motivation-image-all-first {
+    left: 0;
+    height: auto;
+  }
+
 
   .motivation-content {
     padding: 85px 33px 75px;
@@ -580,8 +589,6 @@ h1 {
     width: 25px;
     height: 5px;
   }
-
-
 
   .motivation-caption {
     font-size: 80px;
@@ -637,7 +644,7 @@ h1 {
 
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
   .header {
     min-width: 1920px;
     max-width: 100%;
@@ -821,40 +828,353 @@ h1 {
     max-width: none;
   }
 
+  .motivation-image-all-first {
+    left: 0;
+    height: 730px;
+  }
+
   .motivation-image-second {
     order: 1;
   }
 
-  .motivation-image::before {
-    /*content: "01";
+  .motivation-content::before,
+  .motivation-content-second::before {
+    content: "01";
     display: block;
     box-sizing: border-box;
-    position: absolute; */
+    position: absolute;
     width: 168px;
     height: 168px;
-    left: 876px; /*50%width-168/2*/
-    bottom: 281px; /*50%height-168/2*/
+    left: -84px; /*168/2*/
+    top: 281px; /*50%height-168/2*/
     font-size: 24px;
     padding: 60px 70px 75px;
   }
 
-/*  .motivation-image-second::before {
+  .motivation-content-second::before {
     content: "02";
+    left: 876px;
   }
 
-  .motivation-image-third::before {
+  .motivation-content-third::before {
     content: "03";
-  } */
+  }
 
-  .motivation-image::after {
+  .motivation-content::after,
+  .motivation-content-second::after {
     content: "";
     position: absolute;
-    bottom: 68px;
-    left: 90px;
+    top: 373px;
+    left: -12px;
     width: 24px;
     height: 4px;
     border-radius: 10px;
     background-color: #8f7bc8;
+  }
+
+  .motivation-content-second::after {
+    left: 948px; /*960-12*/
+  }
+
+  .motivation-content {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 260px 196px 240px 128px;
+  }
+
+  .motivation-caption {
+    font-size: 80px;
+  }
+
+  .motivation-text {
+    margin-top: 76px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+
+  .footer {
+    min-width: 1920px;
+    max-width: 100%;
+    background-image: url("../images/game_1920.jpg");
+  }
+
+  .footer-container {
+    width: 81%; /*1557px*/
+    max-width: 1557px;
+    padding-top: 230px;
+    padding-bottom: 50px;
+  }
+
+  .download-app-logo {
+    box-sizing: border-box;
+    width: 130px; /*130px*/
+    height: 130px; /*130px*/
+    padding: 24px 12px; /*24px 12px*/
+    border-radius: 20px;
+  } /*От 1577px*/
+
+  .surface-logo {
+    width: 104px; /*104px*/
+    height: 87px; /*87px*/
+  } /*От 130px*/
+
+  .footer-cta-text {
+    margin-top: 150px;
+    margin-bottom: 260px;
+  }
+
+  .download-app-action {
+    font-size: 80px; /*80px*/
+  }
+
+  .download-app-description {
+    font-size: 30px;
+  }
+
+  .footer .store-buttons {
+    justify-content: space-between;
+    padding-left: 440px;
+    padding-right: 440px;
+
+  }
+
+  .footer .logo-wrapper {
+    margin-top: 260px;
+  }
+
+}
+
+@media (min-width: 961px) {
+  .header {
+    min-width: 1920px;
+    max-width: 100%;
+    padding-top: 45px;
+    padding-bottom: 110px;
+    background-image: url("../images/football_1920.jpg");
+  }
+
+  .header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1557px;
+    min-width: 1557px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+  }
+
+  .logo-wrapper {
+    width: 190px;
+  }
+
+  .surface-logo-text {
+    width: 190px;
+    height: 52px;
+  }
+
+  h1 {
+    width: 1557px;
+    font-size: 90px;
+    letter-spacing: 4.5px;
+    margin-top: 310px;
+  }
+
+  .text-align-right {
+    display: block;
+    margin-left: 450px;
+    text-align: right;
+  }
+
+  .store-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-top: 223px;
+  }
+
+  .btn {
+    width: 310px;
+    height: 77px;
+    padding: 11px 40px 18px;
+    border-radius: 40px;
+  }
+
+  .btn:nth-of-type(n+2) {
+    margin-top: 0;
+  }
+
+  .btn-logo {
+    width: 40px;
+    height: 50px;
+   }
+
+  .btn-text {
+    margin-left: 30px;
+    font-size: 14px;
+  }
+
+  .person-unit {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 1920px;
+    padding-top: 116px; /*116px*/
+    overflow: hidden;
+  }  /* Проценты рассчитаны от ширины width: 768px)*/
+
+  .person-name {
+    padding-left: 1008px; /*292px*/
+    font-size: 80px;
+  }
+
+  .person-name-two {
+    padding-left: 192px; /*192px*/
+  }
+
+  .person-content {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .person-content::before {
+    width: 566px; /*566px*/
+    height: 908px; /*908px*/
+    top: -30%; /*px*/
+    left: 393px;
+    margin-left: 0px;
+  }
+
+  .person-content-one::before {
+    background-image: url("../images/footballer_566.png");
+  }
+
+  .person-content-two::before {
+    width: 991px; /*436px*/
+    height: 815px; /*565px*/
+    top: -30%; /*px*/
+    left: 744px; /*331px*/
+    background-image: url("../images/basketballer_991.png");
+  }
+
+  .point {
+    max-width: 100%;
+    padding-bottom: 54px;
+    padding-top: 40px;
+  }
+
+  .point-caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 1008px; /*1008px*/
+    padding-right: 192px; /*192px*/
+  }
+
+  .point-caption-two {
+    padding-left: 192px; /*192px*/
+    padding-right: 973px; /*973px*/
+  }
+
+  .point-number {
+    font-size: 18px;
+  }
+
+  .point-number::after, .point-number-three::after {
+    top: 37px;
+    width: 18px;
+    height: 5px;
+    border-radius: 15px;
+  }
+
+  .point-name {
+    font-size: 36px;
+    margin-left: 14px;
+  }
+
+  .point-text {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 1008px; /*192px*/
+    padding-right: 192px; /*973px*/
+  }
+
+  .point-text-two {
+    padding-left: 192px; /*192px*/
+    padding-right: 973px; /*973px*/  }
+
+
+  .motivation-unit {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1920px;
+    max-width: 100%;
+    height: 730px;
+  }
+
+  .motivation-image {
+    width: 50%;
+    height: 730px;
+    overflow: hidden;
+  }
+
+  .motivation-image-all {
+    width: auto;
+    height: 730px;
+    max-width: none;
+  }
+
+  .motivation-image-all-first {
+    left: 0;
+    height: 730px;
+  }
+
+  .motivation-image-second {
+    order: 1;
+  }
+
+  .motivation-content::before,
+  .motivation-content-second::before {
+    content: "01";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 168px;
+    height: 168px;
+    left: -84px; /*168/2*/
+    top: 281px; /*50%height-168/2*/
+    font-size: 24px;
+    padding: 60px 70px 75px;
+  }
+
+  .motivation-content-second::before {
+    content: "02";
+    left: 876px;
+  }
+
+  .motivation-content-third::before {
+    content: "03";
+  }
+
+  .motivation-content::after,
+  .motivation-content-second::after {
+    content: "";
+    position: absolute;
+    top: 373px;
+    left: -12px;
+    width: 24px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #8f7bc8;
+  }
+
+  .motivation-content-second::after {
+    left: 948px; /*960-12*/
   }
 
   .motivation-content {
@@ -925,5 +1245,7 @@ h1 {
   }
 
 
+
+@media (min-width: 1921px) {
 
 }
