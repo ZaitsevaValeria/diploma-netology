@@ -697,5 +697,98 @@ h1 {
   .btn-text {
     margin-left: 30px;
     font-size: 14px;
-    }
+  }
+
+  .person-unit {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 1920px;
+    padding-top: 116px; /*116px*/
+    overflow: hidden;
+  }  /* Проценты рассчитаны от ширины width: 768px)*/
+
+  .person-name {
+    padding-left: 1008px; /*292px*/
+    font-size: 80px;
+  }
+
+  .person-name-two {
+    padding-left: 192px; /*192px*/
+  }
+
+  .person-content {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .person-content::before {
+    width: 566px; /*566px*/
+    height: 908px; /*908px*/
+    top: -30%; /*px*/
+    left: 393px;
+    margin-left: 0px;
+  }
+
+  .person-content-one::before {
+    background-image: url("../images/footballer_566.png");
+  }
+
+  .person-content-two::before {
+    width: 991px; /*436px*/
+    height: 815px; /*565px*/
+    top: -30%; /*px*/
+    left: 744px; /*331px*/
+    background-image: url("../images/basketballer_991.png");
+  }
+
+  .point {
+    max-width: 100%;
+    padding-bottom: 54px;
+    padding-top: 40px;
+  }
+
+  .point-caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 1008px; /*1008px*/
+    padding-right: 192px; /*192px*/
+  }
+
+  .point-caption-two {
+    padding-left: 192px; /*192px*/
+    padding-right: 973px; /*973px*/
+  }
+
+  .point-number {
+    font-size: 18px;
+  }
+
+  .point-number::after, .point-number-three::after {
+    top: 37px;
+    width: 18px;
+    height: 5px;
+    border-radius: 15px;
+  }
+
+  .point-name {
+    font-size: 36px;
+    margin-left: 14px;
+  }
+
+  .point-text {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 1008px; /*192px*/
+    padding-right: 192px; /*973px*/
+  }
+
+  .point-text-two {
+    padding-left: 192px; /*192px*/
+    padding-right: 973px; /*973px*/  }
+
+
+
 }
