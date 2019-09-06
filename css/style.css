@@ -15,7 +15,7 @@ a {
 }
 
 .header {
-  /*max-width: 100%;*/
+  width: 100%;
   position: relative;
   padding-top: 10vw; /*32px/320*/
   padding-bottom: 26.25vw; /*84px/320*/
@@ -29,7 +29,7 @@ a {
 .header::after {
   content: "";
   position: absolute;
-  /*max-width: 100%;*/
+  max-width: 100%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -42,7 +42,7 @@ a {
 .header-wrapper {
   position: relative;
   width: 87.5%; /*280px/320*/
-  /*max-width: 100%;*/
+  max-width: 100%;
   min-width: 87.5%;
   margin-left: auto;
   margin-right: auto;
@@ -63,7 +63,7 @@ a {
 
 h1 {
   margin-top: 48.21%; /*135px/280px*/
-  font-size: 8.75vw; /*28/320 or 28px/16px*/
+  font-size: 8.75vmin; /*28/320 or 28px/16px*/
   line-height: 1.2;
   letter-spacing: 0.5px; /*От чего считать? */
   color: #ffffff;
@@ -74,14 +74,14 @@ h1 {
 .text-align-right {
   display: block;
   margin-left: 15.7%; /*44px/280px*/
-  margin-top: 9.37vw; /*30/320 or 30px/280px=10.7% надо ли?*/
+  margin-top: 9.37vmin; /*30/320 or 30px/280px=10.7% надо ли?*/
 }
 
 .store-buttons {
   display: flex;
   flex-wrap: wrap;
   width: 100%; /*280px*/
-  /*max-width: 100%;*/
+  max-width: 100%;
   margin-top: 32.14%; /*90px/280px*/
   margin-left: auto;
   margin-right: auto;
@@ -96,22 +96,22 @@ h1 {
   height: 12.5%; /*35px/280px*/
   padding: 2.85% 28.57%; /*8px/280px 80px/280px*/
   background-color: #5e42b0;
-  border-radius: 5.6vw; /*как перевести в проценты? 18/320*/
+  border-radius: 5.6vmin; /*как перевести в проценты? 18/320*/
 }
 
 .btn:nth-of-type(n+2) {
-  margin-top: 14px; /*14px/280px*/
+  margin-top: 5%; /*14px/280px*/
 }
 
 .btn-logo {
-  width: 6.87vw; /*22px/280px - неверно, как перевести? 22/320*/
+  width: 6.87vmin; /*22px/280px - неверно, как перевести? 22/320*/
   fill: #ffffff;
 }
 
 .btn-text {
-  margin-left: 2.19vw; /*7px/320px*/
+  margin-left: 2.19vmin; /*7px/320px*/
   /*font-size: 0.5em; /*8px/16px*/
-  font-size: 2.5vw; /*8px/16px*/
+  font-size: 2.5vmin; /*8px/16px*/
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
@@ -125,13 +125,13 @@ h1 {
 }
 
 .person-unit {
-  padding-top: 20px;
+  padding-top: 6.25%; /*20px/320px*/
 }
 
 .person-name {
-  margin-bottom: 15px;
-  padding-left: 20px;
-  font-size: 50px;
+  margin-bottom: 5.6%; /*18px/320px*/
+  padding-left: 6.25%; /*20px/320px*/
+  font-size: 15.6vmin; /*50px/320px*/
   line-height: 1.2;
   color: #e7e7e7;
   text-transform: uppercase;
@@ -141,18 +141,18 @@ h1 {
 .person-content {
   max-width: 100%;
   position: relative;
-  padding-top: 281px;
+  padding-top: 87.8vmin; /*281px/320px*/
 }
 
 .person-content::before {
   content: "";
   position: absolute;
   display: block;
-  width: 280px;
-  height: 281px;
+  width: 87.5vmin; /*280px/320px*/
+  height: 87.8vmin; /*281px/320px*/
   top: 0;
   left: 50%;
-  margin-left: -140px;
+  margin-left: -43.75vmin; /*-140px/320px*/
   /*left: calc(50%-280px/2);*/
   background-repeat: no-repeat;
   background-size: contain;
@@ -169,9 +169,9 @@ h1 {
 
 .point {
   max-width: 100%;
-  padding-bottom: 50px;
+  padding-top: 18.75vmin; /*60px/320px*/
+  padding-bottom: 17.18vmin; /*55px/320px*/
   background-color: #ffffff;
-  padding-top: 50px;
 }
 
 .point:nth-of-type(2) {
@@ -192,13 +192,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 6.25%; /*20px/320px*/
+  padding-right: 6.25%; /*20px/320px*/
 }
 
 .point-number {
   position: relative;
-  font-size: 14px;
+  font-size: 4.38vmin; /*14px/320px*/
   font-weight: bold;
   line-height: 2.4;
   color:#000000;
@@ -211,11 +211,11 @@ h1 {
 .point-number::after, .point-number-three::after {
   content: "";
   position: absolute;
-  bottom: 4px;
+  bottom: 1.25vmin; /*4px/320px*/
   left: 0;
-  width: 15px;
-  height: 4px;
-  border-radius: 15px;
+  width: 4.69vmin; /*15px/320px*/
+  height: 1.25vmin; /*4px/320px*/
+  border-radius: 2.19vmin; /*7px/320px*/
   background-color: #5e42b0;
 }
 
@@ -224,34 +224,35 @@ h1 {
 }
 
 .point-name {
-  margin-left: 8px;
-  font-size: 23px;
+  margin-left: 2.5vmin; /*8px/320px*/
+  font-size: 7.19vmin; /*23px/320px*/
   font-weight: bold;
   line-height: 1.5;
   color:#c1c1c1;
 }
 
 .point-text {
-  margin-top: 20px;
-  font-size: 15px;
+  margin-top: 6.25vmin; /*20px/320px*/
+  font-size: 4.69vmin; /*15px/320px*/
   line-height: 1.2;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 6.25vmin; /*20px/320px*/
+  padding-right: 6.25vmin; /*20px/320px*/
 }
 
 /*Section-2*/
 .motivation-unit {
-  max-width: 100%;
+/*  max-width: 100%;*/
 }
 
 .motivation-image {
   max-width: 100%;
-  height: 109vw;
+  height: 109vmin;
   background-color: #ffffff;
   overflow: hidden;
 }
 /*!!!!position relative */
-.motivation-image-all-first {
+.motivation-image-all {
+  min-width: 100%;
   position: relative;
   left: -32%;
   height: 109.6vw;
@@ -259,7 +260,7 @@ h1 {
 
 .motivation-content {
   position: relative;
-  padding: 37px 20px 75px;
+  padding: 11.56vmin 6.25vmin 23.43vmin; /*37px 20px 75px /320 */
 }
 
 .motivation-content::before {
@@ -267,15 +268,15 @@ h1 {
   display: block;
   box-sizing: border-box;
   position: absolute;
-  width: 70px;
-  height: 70px;
-  left: 20px;
-  top: -58px; /*(70px - 12px)*/
-  font-size: 14px;
+  width: 21.88vmin; /*70px/320px*/
+  height: 21.88vmin; /*70px/320px*/
+  left: 6.25vmin; /*20px/320px*/
+  top: -18.13vmin; /*(70px - 12px)   -58px/320px*/
+  font-size: 4.38vmin; /*14px/320px*/
   font-weight: bold;
   line-height: 1;
   text-align: center;
-  padding: 28px;
+  padding: 8.75vmin; /*28px/320px*/
   color: #ffffff;
   background-color: #5e42b0;
 }
@@ -291,16 +292,16 @@ h1 {
 .motivation-content::after {
   content: "";
   position: absolute;
-  top: -12px;
-  left: 48px;
-  width: 15px;
-  height: 4px;
-  border-radius: 10px;
+  top: -3.75vmin; /*-12px/320px*/
+  left: 15vmin; /*48px/320px*/
+  width: 4.69vmin; /*15px/320px*/
+  height: 1.25vmin; /*4px/320px*/
+  border-radius: 2.5vmin; /*8px/320px*/
   background-color: #8f7bc8;
 }
 
 .motivation-caption {
-  font-size: 28px;
+  font-size: 8.75vmin; /*28px/320px*/
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: bold;
@@ -308,8 +309,8 @@ h1 {
 }
 
 .motivation-text {
-  margin-top: 24px;
-  font-size: 16px;
+  margin-top: 7.5vmin; /*24px/320px*/
+  font-size: 5vmin; /*16px/320px*/
   line-height: 1.25;
   color: #000000;
 }
@@ -337,31 +338,31 @@ h1 {
 }
 
 .footer-container {
-  width: 280px;
+  width: 87.5vmin; /*280px/320px*/
   box-sizing: border-box;
-  min-width: 280px;
+  min-width: 87.5vmin; /*280px/320px*/
   position: relative;
   z-index: 5;
-  padding-top: 100px;
-  padding-bottom: 10px;
+  padding-top: 31.25vmin; /*100px/320px*/
+  padding-bottom: 3.12vmin; /*10px/320px*/
   margin-left: auto;
   margin-right: auto;
 }
 
 .download-app-logo {
   box-sizing: border-box;
-  width: 72px;
-  height: 72px;
-  padding: 12px 6px;
+  width: 22.5vmin; /*72px/320px*/
+  height: 22.5vmin; /*72px/320px*/
+  padding: 3.75vmin 1.88vmin; /*12px 6px /320px*/
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 3.75vmin; /*12px/320px*/
   background-image: linear-gradient(to bottom, #7751db, #5e3db3, #50329c);
 }
 
 .surface-logo {
-  width: 56px;
-  height: 48px;
+  width: 17.5vmin; /*56px/320px*/
+  height: 15vmin; /*48px/320px*/
   fill: #ffffff;
   text-align: center;
 }
@@ -371,26 +372,26 @@ h1 {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
-  margin-bottom: 76px;
+  margin-top: 18.75vmin; /*60px/320px*/
+  margin-bottom: 23.75vmin; /*76px/320px*/
 }
 
 .download-app-action {
-  font-size: 32px;
+  font-size: 10vmin; /*32px/320px*/
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .download-app-description {
-  font-size: 14px;
+  font-size: 4.38vmin; /*14px/320px*/
   font-weight: bold;
   color: #9b8ec1;
   text-transform: uppercase;
 }
 
 .footer .logo-wrapper {
-  margin-top: 80px;
+  margin-top: 25vmin; /*80px/320px*/
 }
 
 
@@ -566,14 +567,9 @@ h1 {
   .motivation-image-all {
     width: 100%;
     min-width: 768px;
-    height: auto;
-  }
-
-  .motivation-image-all-first {
     left: 0;
     height: auto;
   }
-
 
   .motivation-content {
     padding: 85px 33px 75px;
@@ -832,10 +828,11 @@ h1 {
     width: auto;
     height: 730px;
     max-width: none;
+    left: 0;
   }
 
   .motivation-image-all-first {
-    left: 0;
+
     height: 730px;
   }
 
@@ -938,20 +935,20 @@ h1 {
     font-size: 30px;
   }
 
-  .footer .store-buttons {
-    justify-content: space-between;
-    padding-left: 440px;
-    padding-right: 440px;
-
-  }
 
   .footer .logo-wrapper {
     margin-top: 260px;
   }
+  /*.footer .store-buttons {
+    justify-content: space-between;
+    padding-left: 440px;
+    padding-right: 440px;*/
+
+
 
 }
 
-@media (min-width: 961px) {
+/*@media (min-width: 961px) {
   .header {
     min-width: 1920px;
     max-width: 100%;
@@ -1001,7 +998,7 @@ h1 {
     justify-content: space-between;
     max-width: 100%;
     margin-top: 223px;
-    padding-left: 440px;
+    /*padding-left: 440px;
     padding-right: 440px;
   }
 
@@ -1031,17 +1028,17 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     min-width: 1920px;
-    padding-top: 116px; /*116px*/
+    padding-top: 116px; /*116px
     overflow: hidden;
-  }  /* Проценты рассчитаны от ширины width: 768px)*/
+  }  Проценты рассчитаны от ширины width: 768px)
 
   .person-name {
-    padding-left: 1008px; /*292px*/
+    padding-left: 1008px; /*292px
     font-size: 80px;
   }
 
   .person-name-two {
-    padding-left: 192px; /*192px*/
+    padding-left: 192px; /*192px
   }
 
   .person-content {
@@ -1050,9 +1047,9 @@ h1 {
   }
 
   .person-content::before {
-    width: 566px; /*566px*/
-    height: 908px; /*908px*/
-    top: -30%; /*px*/
+    width: 566px; /*566px
+    height: 908px; /*908px
+    top: -30%; /*px
     left: 393px;
     margin-left: 0px;
   }
@@ -1062,10 +1059,10 @@ h1 {
   }
 
   .person-content-two::before {
-    width: 991px; /*436px*/
-    height: 815px; /*565px*/
-    top: -30%; /*px*/
-    left: 744px; /*331px*/
+    width: 991px; /*436px
+    height: 815px; /*565px
+    top: -30%; /*px
+    left: 744px; /*331px
     background-image: url("../images/basketballer_991.png");
   }
 
@@ -1079,13 +1076,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-left: 1008px; /*1008px*/
-    padding-right: 192px; /*192px*/
+    padding-left: 1008px; /*1008px
+    padding-right: 192px; /*192px
   }
 
   .point-caption-two {
-    padding-left: 192px; /*192px*/
-    padding-right: 973px; /*973px*/
+    padding-left: 192px; /*192px
+    padding-right: 973px; /*973px
   }
 
   .point-number {
@@ -1108,13 +1105,13 @@ h1 {
     margin-top: 30px;
     font-size: 20px;
     line-height: 1.5;
-    padding-left: 1008px; /*192px*/
-    padding-right: 192px; /*973px*/
+    padding-left: 1008px; /*192px
+    padding-right: 192px; /*973px
   }
 
   .point-text-two {
-    padding-left: 192px; /*192px*/
-    padding-right: 973px; /*973px*/  }
+    padding-left: 192px; /*192px
+    padding-right: 973px; /*973px }
 
 
   .motivation-unit {
@@ -1154,8 +1151,8 @@ h1 {
     position: absolute;
     width: 168px;
     height: 168px;
-    left: -84px; /*168/2*/
-    top: 281px; /*50%height-168/2*/
+    left: -84px; /*168/2
+    top: 281px; /*50%height-168/2
     font-size: 24px;
     padding: 60px 70px 75px;
   }
@@ -1182,7 +1179,7 @@ h1 {
   }
 
   .motivation-content-second::after {
-    left: 948px; /*960-12*/
+    left: 948px; /*960-12
   }
 
   .motivation-content {
@@ -1209,7 +1206,7 @@ h1 {
   }
 
   .footer-container {
-    width: 81%; /*1557px*/
+    width: 81%; /*1557px
     max-width: 1557px;
     padding-top: 230px;
     padding-bottom: 50px;
@@ -1217,16 +1214,16 @@ h1 {
 
   .download-app-logo {
     box-sizing: border-box;
-    width: 130px; /*130px*/
-    height: 130px; /*130px*/
-    padding: 24px 12px; /*24px 12px*/
+    width: 130px; /*130px
+    height: 130px; /*130px
+    padding: 24px 12px; /*24px 12px
     border-radius: 20px;
-  } /*От 1577px*/
+  } /*От 1577px
 
   .surface-logo {
-    width: 104px; /*104px*/
-    height: 87px; /*87px*/
-  } /*От 130px*/
+    width: 104px; /*104px
+    height: 87px; /*87px*
+  } /*От 130px
 
   .footer-cta-text {
     margin-top: 150px;
@@ -1234,24 +1231,19 @@ h1 {
   }
 
   .download-app-action {
-    font-size: 80px; /*80px*/
+    font-size: 80px; /*80px
   }
 
   .download-app-description {
     font-size: 30px;
   }
 
-/*  .footer .store-buttons {
-    justify-content: space-between;
-    padding-left: 440px;
-    padding-right: 440px;
-
-  } */
-
   .footer .logo-wrapper {
     margin-top: 260px;
   }
+}
 
+*/
 
 
 @media (min-width: 1921px) {
