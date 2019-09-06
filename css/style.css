@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 body {
   min-width: 320px;
   font-family: 'Open Sans', sans-serif;
@@ -992,9 +993,11 @@ h1 {
   .store-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 100%;
     margin-top: 223px;
+    padding-left: 440px;
+    padding-right: 440px;
   }
 
   .btn {
@@ -1233,12 +1236,12 @@ h1 {
     font-size: 30px;
   }
 
-  .footer .store-buttons {
+/*  .footer .store-buttons {
     justify-content: space-between;
     padding-left: 440px;
     padding-right: 440px;
 
-  }
+  } */
 
   .footer .logo-wrapper {
     margin-top: 260px;
