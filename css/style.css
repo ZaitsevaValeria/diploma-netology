@@ -3,10 +3,10 @@
   padding: 0;
 }
 
-
 body {
   min-width: 320px;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -15,10 +15,10 @@ a {
 }
 
 .header {
-  max-width: 100%;
+  /*max-width: 100%;*/
   position: relative;
-  padding-top: 33px;
-  padding-bottom: 84px;
+  padding-top: 10vw; /*32px/320*/
+  padding-bottom: 26.25vw; /*84px/320*/
   background-image: url("../images/football_767.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +29,7 @@ a {
 .header::after {
   content: "";
   position: absolute;
-  max-width: 100%;
+  /*max-width: 100%;*/
   top: 0;
   right: 0;
   bottom: 0;
@@ -41,72 +41,77 @@ a {
 
 .header-wrapper {
   position: relative;
-  width: 280px;
-  max-width: 100%;
-  min-width: 280px;
+  width: 87.5%; /*280px/320*/
+  /*max-width: 100%;*/
+  min-width: 87.5%;
   margin-left: auto;
   margin-right: auto;
   z-index: 5;
 }
 
 .logo-wrapper {
-  width: 133px;
+  width: 47.5%; /*133px/280*/
   margin-left: auto;
   margin-right: auto;
 }
 
 .surface-logo-text {
-  width: 133px;
-  height: 36px;
+  width: 100%; /*133px/133px*/
+  /*height: 27%; /*36px/133px*/
   fill: #ffffff;
 }
 
 h1 {
-  font-size: 28px;
+  margin-top: 48.21%; /*135px/280px*/
+  font-size: 8.75vw; /*28/320 or 28px/16px*/
   line-height: 1.2;
+  letter-spacing: 0.5px; /*От чего считать? */
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 135px;
+
 }
 
 .text-align-right {
   display: block;
-  margin-left: 44px;
-  margin-top: 30px;
+  margin-left: 15.7%; /*44px/280px*/
+  margin-top: 9.37vw; /*30/320 or 30px/280px=10.7% надо ли?*/
 }
 
 .store-buttons {
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
-  margin-top: 90px;
+  width: 100%; /*280px*/
+  /*max-width: 100%;*/
+  margin-top: 32.14%; /*90px/280px*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 280px;
-  height: 35px;
-  padding: 8px 80px;
+  width: 100%; /*280px/280px*/
+  height: 12.5%; /*35px/280px*/
+  padding: 2.85% 28.57%; /*8px/280px 80px/280px*/
   background-color: #5e42b0;
-  border-radius: 18px;
+  border-radius: 5.6vw; /*как перевести в проценты? 18/320*/
 }
 
 .btn:nth-of-type(n+2) {
-  margin-top: 14px;
+  margin-top: 14px; /*14px/280px*/
 }
 
 .btn-logo {
-  width: 22px;
+  width: 6.87vw; /*22px/280px - неверно, как перевести? 22/320*/
   fill: #ffffff;
 }
 
 .btn-text {
-  margin-left: 7px;
-  font-size: 8px;
+  margin-left: 2.19vw; /*7px/320px*/
+  /*font-size: 0.5em; /*8px/16px*/
+  font-size: 2.5vw; /*8px/16px*/
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
