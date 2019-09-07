@@ -104,8 +104,20 @@
 
     <section class="motivation">
       <article class="motivation-unit">
-        <div class="motivation-image motivation-image-first ">
-          <img src="images/be-active_768.jpg" class="motivation-image-all motivation-image-all-first" alt="Be active">
+        <div class="motivation-image">
+          <picture class="picture picture-first">
+            <source
+            media="(min-width: 320px)"
+            srcset="images/be-active_640.jpg">
+            <source
+            media="(min-width: 641px)"
+            srcset="images/be-active_960.jpg">
+            <source
+            media="(min-width: 961px)"
+            srcset="images/be-active_1024.jpg">
+            <img src="images/be-active.jpg" class="motivation-image-all" alt="Be active">
+          </picture>
+      <!--    <img src="images/be-active_768.jpg" class="motivation-image-all motivation-image-all-first" alt="Be active"> -->
         </div>
         <div class="motivation-content motivation-content-first">
           <h2 class="motivation-caption">Be active</h2>
@@ -115,7 +127,18 @@
 
       <article class="motivation-unit">
         <div class="motivation-image motivation-image-second">
-          <img src="images/find-contact.jpg" class="motivation-image-all" alt="Be active">
+          <picture class="picture picture-second">
+            <source media="(min-width: 320px)"
+            srcset="images/find-contact_640.jpg">
+            <source media="(min-width: 641px)"
+            srcset="images/find-contact_960.jpg">
+            <source media="(min-width: 961px)"
+            srcset="images/find-contact_1024.jpg">
+            <img src="images/find-contact.jpg" class="motivation-image-all" alt="Be active">
+          </picture>
+          <!--
+            <img src="images/find-contact.jpg" class="motivation-image-all" alt="Be active">
+          -->
         </div>
         <div class="motivation-content motivation-content-second">
           <h2 class="motivation-caption">Find contact</h2>
@@ -124,8 +147,22 @@
       </article>
 
       <article class="motivation-unit">
-        <div class="motivation-image motivation-image-third">
-          <img src="images/work-it.jpg" class="motivation-image-all" alt="Be active">
+        <div class="motivation-image">
+          <picture class="picture picture-third">
+            <source
+            media="(min-width: 320px)"
+            srcset="images/work-it_640.jpg">
+            <source
+            media="(min-width: 641px)"
+            srcset="images/images/work-it_960.jpg">
+            <source
+            media="(min-width: 961px)"
+            srcset="images/images/work-it_1024.jpg">
+            <img src="images/images/work-it.jpg" class="motivation-image-all" alt="Be active">
+            </picture>
+
+
+          <!--<img src="images/work-it.jpg" class="motivation-image-all" alt="Be active">-->
         </div>
         <div class="motivation-content motivation-content-third">
           <h2 class="motivation-caption">Work it</h2>
