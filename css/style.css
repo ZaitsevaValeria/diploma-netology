@@ -666,6 +666,12 @@ h1 {
 }
 
 @media (min-width: 961px) {
+  body {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .header {
     min-width: 1920px;
     max-width: 100%;
@@ -698,9 +704,12 @@ h1 {
 
   h1 {
     width: 100%; /*1557px/1557*/
+    min-width: 1557px;
     font-size: 4.7vw; /*90px/1920*/
     letter-spacing: 0.23vw; /*4.5px/1920*/
     margin-top: 16.1vw; /*310px/1920*/
+    padding-left: 0.52vw; /*310px/1920*/
+    padding-right: 0.52vw; /*310px/1920*/
   }
 
   .text-align-right {
@@ -747,29 +756,30 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     min-width: 1920px;
-    padding-top: 116px; /*116px*/
+    padding-top: 6vw; /*116px*/
     overflow: hidden;
   }  /* Проценты рассчитаны от ширины width: 768px)*/
 
   .person-name {
-    padding-left: 1008px; /*292px*/
-    font-size: 80px;
+    margin-bottom: 2.6vw; /*50/1920px*/
+    padding-left: 52.5vw; /*1008px/1920*/
+    font-size: 4.2vw; /*80px/1920*/
   }
 
   .person-name-two {
-    padding-left: 192px; /*192px*/
+    padding-left: 10vw; /*192px/1920*/
   }
 
   .person-content {
     width: 100%;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .person-content::before {
-    width: 566px; /*566px*/
-    height: 908px; /*908px*/
+    width: 29.5vw; /*566px/1920*/
+    height: 47.3vw; /*908px/1920*/
     top: -30%; /*px*/
-    left: 393px;
+    left: 20.3%;  /*390/1920*/
     margin-left: 0px;
   }
 
@@ -778,59 +788,59 @@ h1 {
   }
 
   .person-content-two::before {
-    width: 991px; /*436px*/
-    height: 815px; /*565px*/
+    width: 51.6vw; /*991/1920*/
+    height: 42.4vw; /*815/1920*/
     top: -30%; /*px*/
-    left: 744px; /*331px*/
+    left: 42.2vw; /*744/1920px*/
     background-image: url("../images/basketballer_991.png");
   }
 
   .point {
     max-width: 100%;
-    padding-bottom: 54px;
-    padding-top: 40px;
+    padding-bottom: 2.8vw; /*55/1920px*/
+    padding-top: 2.8vw; /*55/1920px*/
   }
 
   .point-caption {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-left: 1008px; /*1008px*/
-    padding-right: 192px; /*192px*/
+    padding-left: 52.5vw; /*1008/1920px*/
+    padding-right: 10vw; /*192/1920px*/
   }
 
   .point-caption-two {
-    padding-left: 192px; /*192px*/
-    padding-right: 973px; /*973px*/
+    padding-left: 10vw; /*192/1920px*/
+    padding-right: 57.8vw; /*1110px/1920px*/
   }
 
   .point-number {
-    font-size: 18px;
+    font-size: 0.9vw; /*18/1920px*/
   }
 
   .point-number::after, .point-number-three::after {
-    top: 37px;
-    width: 18px;
-    height: 5px;
-    border-radius: 15px;
+    top: 1.9vw; /*37px*/
+    width: 0.9vw; /*18px*/
+    height: 0.26vw; /*5px*/
+    border-radius: 4.7vw; /*9px*/
   }
 
   .point-name {
-    font-size: 36px;
-    margin-left: 14px;
+    font-size: 1.88vw; /*36px*/
+    margin-left: 0.73vw; /*14px*/
   }
 
   .point-text {
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 1.56vw; /*30px*/
+    font-size: 1vw; /*20px*/
     line-height: 1.5;
-    padding-left: 1008px; /*192px*/
-    padding-right: 192px; /*973px*/
+    padding-left: 52.2vw; /*1008px*/
+    padding-right: 10vw; /*192px*/
   }
 
   .point-text-two {
-    padding-left: 192px; /*192px*/
-    padding-right: 973px; /*973px*/  }
+    padding-left: 10vw; /*192px*/
+    padding-right: 50.7vw; /*973px*/  }
 
 
   .motivation-unit {
@@ -864,36 +874,29 @@ h1 {
     order: 1;
   }
 
-    /*.motivation-image-all {
-  width: auto;
-    height: 730px;
-    max-width: none;
-    left: 0;
-  } */
-
-  /*.motivation-image-all-first {
-    height: 730px;
-  } */
-
-
-
   .motivation-content::before,
   .motivation-content-second::before {
     content: "01";
     display: block;
     box-sizing: border-box;
     position: absolute;
-    width: 168px;
-    height: 168px;
-    left: -84px; /*168/2*/
-    top: 281px; /*50%height-168/2*/
-    font-size: 24px;
-    padding: 60px 70px 75px;
+    width: 8.75vw; /*168/2*/
+    height: 8.75vw; /*168/2*/
+    left: -4.4vw; /*168/2*/
+    top: 14.6vw; /*50%height-168/2*/
+    font-size: 1.25vw; /*24/2*/
+    padding: 3.1vw 3.6vw 3.9vw; /*60px 70px 75px*/
+  }
+
+  .motivation-content {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 13.5vw 10.2vw 12.5vw 6.7vw; /*260px 196px 240px 128px/1920*/
   }
 
   .motivation-content-second::before {
     content: "02";
-    left: 876px;
+    left: 45.6vw; /*876px*/
   }
 
   .motivation-content-third::before {
@@ -904,34 +907,27 @@ h1 {
   .motivation-content-second::after {
     content: "";
     position: absolute;
-    top: 373px;
-    left: -12px;
-    width: 24px;
-    height: 4px;
-    border-radius: 10px;
+    top: 19.4vw; /*876px*/
+    left: -0.62vw; /*12px*/
+    width: 1.25vw; /*24px*/
+    height: 0.2vw; /*4px*/
+    border-radius: 0.5vw; /*10px*/
     background-color: #8f7bc8;
   }
 
   .motivation-content-second::after {
-    left: 948px; /*960-12*/
-  }
-
-  .motivation-content {
-    box-sizing: border-box;
-    width: 50%;
-    padding: 260px 196px 240px 128px;
+    left: 49.4vw; /*960-12*/
   }
 
   .motivation-caption {
-    font-size: 80px;
+    font-size: 4.2vw; /*80*/
   }
 
   .motivation-text {
-    margin-top: 76px;
-    font-size: 24px;
+    margin-top: 4vw; /*80px*/
+    font-size: 1.25vw; /*80px*/
     line-height: 1.2;
   }
-
 
   .footer {
     min-width: 1920px;
@@ -941,40 +937,40 @@ h1 {
 
   .footer-container {
     width: 81%; /*1557px*/
-    max-width: 1557px;
-    padding-top: 230px;
-    padding-bottom: 50px;
+    max-width: 1557px; /*1557px*/
+    padding-top: 12vw; /*230px*/
+    padding-bottom: 2.6vw; /*50px*/
   }
 
   .download-app-logo {
     box-sizing: border-box;
-    width: 130px; /*130px*/
-    height: 130px; /*130px*/
-    padding: 24px 12px; /*24px 12px*/
-    border-radius: 20px;
+    width: 8.3%; /*130px*/
+    height: 8.3%; /*130px*/
+    padding: 1.5% 0.8%; /*24px 12px*/
+    border-radius: 20px;  /*20px*/
   } /*От 1577px*/
 
   .surface-logo {
-    width: 104px; /*104px*/
-    height: 87px; /*87px*/
+    width: 5.4vw; /*104px*/
+    height: 4.5vw; /*87px*/
   } /*От 130px*/
 
   .footer-cta-text {
-    margin-top: 150px;
-    margin-bottom: 260px;
+    margin-top: 9.6%;  /*150px*/
+    margin-bottom: 16.7%;  /*260px*/
   }
 
   .download-app-action {
-    font-size: 80px; /*80px*/
+    font-size: 4.2vw; /*80px*/
   }
 
   .download-app-description {
-    font-size: 30px;
+    font-size: 1.56vw; /*30px*/
   }
 
 
   .footer .logo-wrapper {
-    margin-top: 260px;
+    margin-top: 13.5vw;
   }
   /*.footer .store-buttons {
     justify-content: space-between;
