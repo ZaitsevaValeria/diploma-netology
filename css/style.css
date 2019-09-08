@@ -110,7 +110,6 @@ h1 {
 
 .btn-text {
   margin-left: 2.19vmin; /*7px/320px*/
-  /*font-size: 0.5em; /*8px/16px*/
   font-size: 2.5vmin; /*8px/16px*/
   line-height: 1.2;
   text-transform: uppercase;
@@ -219,7 +218,7 @@ h1 {
   background-color: #5e42b0;
 }
 
-.point-number-three::after {
+.point-dark .point-number::after {
   background-color: #ffffff;
 }
 
@@ -402,69 +401,63 @@ h1 {
 
 
 @media (min-width: 641px) and (max-width: 960px) {
-
-
   .header {
-    min-width: 768px;
-    padding-top: 40px;
-    padding-bottom: 90px;
+    min-width: 768px; /*768px*/
+    padding-top: 5.2%; /*40/768px*/
+    padding-bottom: 11.7%; /*90/768px*/
     background-image: url("../images/football_1280.jpg");
   }
 
   .header-wrapper {
-    width: 90%; /*703px*/
+    width: 91.5%; /*703/768px*/
     max-width: 703px;
   }
 
   .logo-wrapper {
-    width: 204px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 29%; /*204/703px*/
   }
 
   .surface-logo-text {
-    width: 204px;
-    height: 56px;
+    width: 100%; /*204/204px*/
+    height: 25.45%; /*56/204px*/
     fill: #ffffff;
   }
 
   h1 {
-    font-size: 64px;
-    margin-top: 180px;
-    margin-left: 5%; /*35px*/
-  } /* Проценты рассчитаны от ширины родительского контейнера .header-wrapper (width: 703px)*/
+    font-size: 8.33vw; /*64/768px*/
+    margin-top: 23.4vw; /*180/768px*/
+    margin-left: 4.5vw; /*35px/768*/
+  }
 
   .text-align-right {
-    margin-left: 15.4%; /*108px*/
-    margin-top: 30px;
+    margin-left: 14vw; /*108/768px*/
+    margin-top: 3.9vw; /*30/768px*/
   }
 
   .store-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly; /*Проверить*/
   }
 
   .btn {
-    width: 44%; /*310px*/
-    height: 11%; /*77px*/
-    padding: 2.3% 5.8% 2.7%; /*16px 41px 19px*/
+    width: 44%; /*310px/703*/
+    height: 11%; /*77px/703*/
+    padding: 2.3% 5.8% 2.7%; /*16px 41px 19px /703*/
     border-radius: 40px;
   }
 
   .btn:nth-of-type(n+2) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
-
   .btn-logo {
-    width: 13%; /*40px*/
-    fill: #ffffff;
-  }  /* Проценты рассчитаны от ширины родителя .btn (width: 310px)*/
+    width: 13%; /*40px/310*/
+  }
 
   .btn-text {
-    margin-left: 9%; /*28px*/
-    font-size: 14px;
+    margin-left: 3.6vw; /*28px/768px*/
+    font-size: 1.8vw; /*14px/768*/
   }
 
   .person-unit {
@@ -472,30 +465,31 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     min-width: 768px;
-    padding-top: 86px; /*86px*/
+    padding-top: 11.2vw; /*86px/768*/
     overflow: hidden;
-  }  /* Проценты рассчитаны от ширины width: 768px)*/
+  }
 
   .person-name {
-    padding-left: 38%; /*292px*/
-    font-size: 80px;
+    padding-left: 38vw; /*292/768px*/
+    margin-bottom: 0;
+    font-size: 10.4vw; /*80/768*/
   }
 
   .person-name-two {
-    padding-left: 4%; /*31px*/
+    padding-left: 4.3vw; /*33/768px*/
   }
 
   .person-content {
     width: 100%;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .person-content::before {
-    width: 496px; /*496px*/
-    height: 699px; /*699px*/
-    top: -15%; /*px*/
-    left: -168px;
-    margin-left: 0px;
+    width: 64.7vw; /*497/768px*/
+    height: 91vw; /*699px/768*/
+    top: -10%; /*px*/
+    left: -21%; /*-168px/768*/
+    margin-left: 0;
   }
 
   .person-content-one::before {
@@ -503,61 +497,65 @@ h1 {
   }
 
   .person-content-two::before {
-    width: 691px; /*436px*/
-    height: 568px; /*565px*/
+    width: 90vw; /*691/768px*/
+    height: 74vw; /*568/768px*/
     top: -20%; /*px*/
-    left: 331px; /*331px*/
+    left: 44%; /*334px/768*/
     background-image: url("../images/basketballer_691.png");
   }
 
   .point {
     max-width: 100%;
-    padding-bottom: 36px;
-    padding-top: 40px;
+    padding-bottom: 4.9vw; /*38/768px*/
+    padding-top: 5.2vw; /*40/768px*/
   }
 
   .point-caption {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-left: 38%; /*292px*/
-    padding-right: 4%; /*31px*/
+    padding-left: 38vw; /*292/768px*/
+    padding-right: 4.3vw; /*33/768px*/
   }
 
   .point-caption-two {
-    padding-left: 4%; /*31px*/
-    padding-right: 40%; /*31px*/
+    padding-left: 4.3vw; /*33/768px*/
+    padding-right: 56.7vw; /*436/768px*/
   }
 
   .point-number {
-    font-size: 18px;
+    font-size: 2.3vw; /*18/768px*/
     line-height: 1.9;
-    font-weight: bold;
   }
 
-  .point-number::after, .point-number-three::after {
-    top: 28px;
-    width: 21px;
-    height: 4px;
-    border-radius: 15px;
+  .point-number::after,
+  .point-number-three::after {
+    top: 3.6vw; /*28/768px*/
+    width: 2.4vw; /*21/768px*/
+    height: 0.52vw; /*4/768px*/
+    border-radius: 1.3vw; /*10/768px*/
+  }
+
+  .point-dark .point-number::after {
+    background-color: #ffffff;
   }
 
   .point-name {
-    font-size: 32px;
+    font-size: 4.2vw; /*32/768px*/
     line-height: 1.1;
   }
 
   .point-text {
-    margin-top: 30px;
-    font-size: 18px;
+    margin-top: 3.9vw;  /*30/768px*/
+    font-size: 2.34vw;  /*18/768px*/
     line-height: 1.5;
-    padding-left: 38%; /*292px*/
-    padding-right: 4%; /*31px*/
+    padding-left: 38vw; /*292px*/
+    padding-right: 4.3vw; /*33px*/
   }
 
   .point-text-two {
-    padding-left: 4%; /*31px*/
-    padding-right: 40%; /*310px*/
+    padding-left: 4.3vw; /*33px*/
+    padding-right: 40.4vw; /*310px*/
   }
 
   .motivation-unit {
@@ -584,41 +582,38 @@ h1 {
   }*/
 
   .motivation-image-all {
-    /*width: 100%;*/
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
     min-height: 76vmin;
-    object-fit: cover;
   }
 
   .motivation-content {
-    padding: 85px 33px 75px;
+    padding: 11vw 4.3vw 9.8vw; /*85px 33px 75px/768*/
   }
 
   .motivation-content::before {
-    width: 116px;
-    height: 116px;
-    left: 33px;
-    top: -81px;
-    font-size: 24px;
+    width: 15.1vw; /*116/768*/
+    height: 15.1vw; /*116/768*/
+    left: 4.3vw; /*33px/768*/
+    top: -10.54vw; /*81px/768*/
+    font-size: 3.1vw; /*24px/768*/
     line-height: 1.4;
-    padding: 42px;
+    padding: 5.5vw; /*42px/768*/
   }
 
   .motivation-content::after {
-    top: -9px;
-    left: 77px;
-    width: 25px;
-    height: 5px;
+    top: -1.17vw; /*-9px/768*/
+    left: 10vw; /*77px/768*/
+    width: 3.3vw; /*25px/768*/
+    height: 0.65vw; /*5px/768*/
   }
 
   .motivation-caption {
-    font-size: 80px;
+    font-size: 10.42vw; /*80px/768*/
   }
 
   .motivation-text {
-    margin-top: 40px;
-    font-size: 24px;
+    margin-top: 5.2vw; /*40px/768*/
+    font-size: 3.12vw; /*24px/768*/
   }
 
   .footer {
@@ -628,40 +623,44 @@ h1 {
   }
 
   .footer-container {
-    width: 90%; /*703px*/
+    width: 91.5%; /*703/768px*/
     max-width: 703px;
-    padding-top: 126px;
-    padding-bottom: 23px;
+    padding-top: 16.4vw; /*126/768px*/
+    padding-bottom: 3vw; /*23/768px*/
   }
 
   .download-app-logo {
     box-sizing: border-box;
-    width: 18%; /*130px*/
-    height: 18%; /*130px*/
-    padding: 3.4% 1.7%; /*24px 12px*/
+    width: 18.5%; /*130px/703*/
+    height: 18.5%; /*130px/703*/
+    padding: 3.4% 1.7%; /*24px 12px/768*/
     border-radius: 20px;
   } /*От 703px*/
 
   .surface-logo {
-    width: 80%; /*104px*/
-    height: 67%; /*87px*/
+    width: 13.5vw; /*104px/768*/
+    height: 11.3vw; /*87px/768*/
   } /*От 130px*/
 
   .footer-cta-text {
-    margin-top: 82px;
-    margin-bottom: 288px;
+    margin-top: 11.7%; /*82/703*/
+    margin-bottom: 41%; /*288px/703*/
   }
 
   .download-app-action {
-    font-size: 80px; /*80px*/
+    font-size: 10.4vw; /*80px/768*/
   }
 
   .download-app-description {
-    font-size: 36px;
+    font-size: 4.7vw; /*80px/768*/
+  }
+
+  .footer .store-buttons {
+    margin-top: 37.5vw; /*288px/768*/
   }
 
   .footer .logo-wrapper {
-    margin-top: 55px;
+    margin-top: 7.16vw; /*55px/768*/
   }
 
 }
@@ -670,8 +669,8 @@ h1 {
   .header {
     min-width: 1920px;
     max-width: 100%;
-    padding-top: 45px;
-    padding-bottom: 110px;
+    padding-top: 2.3vw; /*45px/1920*/
+    padding-bottom: 5.7vw; /*45px/1920*/
     background-image: url("../images/football_1920.jpg");
   }
 
@@ -681,48 +680,52 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 1557px;
-    min-width: 1557px;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 1557px; /*1557px/1920*/
+    min-width: 81vw; /*1557px/1920*/
+    padding-left: 0.6vw; /*12px/1920*/
+    padding-right: 0.6vw; /*12px/1920*/
 
   }
 
   .logo-wrapper {
-    width: 190px;
+    width: 12.2%; /*190px/1557*/
   }
 
   .surface-logo-text {
-    width: 190px;
-    height: 52px;
+    width: 100%; /*190px/190*/
+    height: 27.4%; /*52px/190*/
   }
 
   h1 {
-    width: 1557px;
-    font-size: 90px;
-    letter-spacing: 4.5px;
-    margin-top: 310px;
+    width: 100%; /*1557px/1557*/
+    font-size: 4.7vw; /*90px/1920*/
+    letter-spacing: 0.23vw; /*4.5px/1920*/
+    margin-top: 16.1vw; /*310px/1920*/
   }
 
   .text-align-right {
     display: block;
-    margin-left: 450px;
-    text-align: right;
+    margin-left: 23.4vw; /*450px/1920*/
+    /*text-align: right;*/
+    margin-top: 1.4vw; /*27px/1920*/
   }
 
   .store-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 100%;
-    margin-top: 223px;
+    justify-content: space-between;
+    width: 43.2%; /*672px/1557*/
+    /*max-width: 100%;*/
+    margin-top: 14.32%; /*223px/1557*/
+
   }
 
   .btn {
-    width: 310px;
-    height: 77px;
-    padding: 11px 40px 18px;
-    border-radius: 40px;
+    width: 46.1%; /*310px/672*/
+    height: 11.5%; /*77px/672*/
+    padding: 1.6% 6% 2.7%; /*11px 40px 18px/672*/
+    border-radius: 4vw; /*px/1920*/
+    justify-content: center;
   }
 
   .btn:nth-of-type(n+2) {
@@ -730,13 +733,13 @@ h1 {
   }
 
   .btn-logo {
-    width: 40px;
-    height: 50px;
+    width: 2.1vw; /*40px/1920 От родителя не считается*/
+    height: 2.6vw; /*50px/1920*/
    }
 
   .btn-text {
-    margin-left: 30px;
-    font-size: 14px;
+    margin-left: 1.6vw; /*30px/1920*/
+    font-size: 0.88em; /*14px/16px От родителя не считается*/
   }
 
   .person-unit {
