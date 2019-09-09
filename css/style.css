@@ -104,12 +104,12 @@ h1 {
 }
 
 .btn-logo {
-  width: 6.87vmin; /*22px/280px - неверно, как перевести? 22/320*/
+  width: 6.87vmin; /*22px/280px=7.85% - неверно, как перевести? 22/320  6.87vmin*/
   fill: #ffffff;
 }
 
 .btn-text {
-  margin-left: 2.19vmin; /*7px/320px*/
+  margin-left: 2.19vmin; /*7px/320px=2.19vmin*/
   font-size: 2.5vmin; /*8px/16px*/
   line-height: 1.2;
   text-transform: uppercase;
@@ -139,11 +139,11 @@ h1 {
 .person-content {
   width: 100%;
   position: relative;
-  padding-top: 87.8vmin; /*281px/320px*/
+  padding-top: 87.8%; /*281px/320px=87.8vmin*/
 }
 
 .person-content-two {
-  padding-top: 77.5vmin; /*281px/320px*/
+  padding-top: 77.5%; /*248px/320px*/
 }
 
 .person-content::before {
@@ -173,8 +173,8 @@ h1 {
 
 .point {
   width: 100%;
-  padding-top: 18.75vmin; /*60px/320px*/
-  padding-bottom: 17.18vmin; /*55px/320px*/
+  padding-top: 18.75%; /*60px/320px*/
+  padding-bottom: 17.18%; /*55px/320px*/
   background-color: #ffffff;
 }
 
@@ -202,7 +202,7 @@ h1 {
 
 .point-number {
   position: relative;
-  font-size: 4.38vmin; /*14px/320px*/
+  font-size: 4.37vmin; /*14px/320px*/
   font-weight: bold;
   line-height: 2.4;
   color:#000000;
@@ -215,11 +215,11 @@ h1 {
 .point-number::after, .point-number-three::after {
   content: "";
   position: absolute;
-  bottom: 1.25vmin; /*4px/320px*/
+  bottom: 3.25%; /*4px/320px*/
   left: 0;
-  width: 4.69vmin; /*15px/320px*/
-  height: 1.25vmin; /*4px/320px*/
-  border-radius: 2.19vmin; /*7px/320px*/
+  width: 100%; /*14px/320px*/
+  height: 12.5%; /*4px/320px*/
+  border-radius: 20%; /*7px/320px*/
   background-color: #5e42b0;
 }
 
@@ -229,7 +229,7 @@ h1 {
 } /*Правило срабатывает только для первого селектора*/
 
 .point-name {
-  margin-left: 2.5vmin; /*8px/320px*/
+  margin-left: 2.5%; /*8px/320px*/
   font-size: 7.19vmin; /*23px/320px*/
   font-weight: bold;
   line-height: 1.5;
@@ -237,32 +237,22 @@ h1 {
 }
 
 .point-text {
-  margin-top: 6.25vmin; /*20px/320px*/
+  margin-top: 6.25%; /*20px/320px*/
   font-size: 4.69vmin; /*15px/320px*/
   line-height: 1.2;
-  padding-left: 6.25vmin; /*20px/320px*/
-  padding-right: 6.25vmin; /*20px/320px*/
+  padding-left: 6.25%; /*20px/320px*/
+  padding-right: 6.25%; /*20px/320px*/
 }
 
 /*Section-2*/
-.motivation-unit {
-/*  max-width: 100%;*/
-}
 
 .picture {
   max-width: 100%;
-  height: 109vmin;
+  height: 109%; /*350px*/
   background-color: #ffffff;
   overflow: hidden;
+}
 
-}
-/*!!!!position relative */
-.picture {
-  /*min-width: 100%;*/
-  position: relative;
-  /*left: -32%;*/
-  height: 109.6vw;
-}
 
 .motivation-image-all {
   max-width: 100%;
@@ -271,7 +261,7 @@ h1 {
 
 .motivation-content {
   position: relative;
-  padding: 11.56vmin 6.25vmin 23.43vmin; /*37px 20px 75px /320 */
+  padding: 11.56% 6.25% 23.43%; /*37px 20px 75px /320 */
 }
 
 .motivation-content::before {
@@ -320,7 +310,7 @@ h1 {
 }
 
 .motivation-text {
-  margin-top: 7.5vmin; /*24px/320px*/
+  margin-top: 7.5%; /*24px/320px*/
   font-size: 5vmin; /*16px/320px*/
   line-height: 1.25;
   color: #000000;
@@ -353,28 +343,27 @@ h1 {
   box-sizing: border-box;
   position: relative;
   z-index: 5;
-  padding-top: 31.25vmin; /*100px/320px*/
-  padding-bottom: 3.12vmin; /*10px/320px*/
+  padding-top: 31.25%; /*100px/320px*/
+  padding-bottom: 3.12%; /*10px/320px*/
   margin-left: auto;
   margin-right: auto;
 }
 
 .download-app-logo {
-  box-sizing: border-box;
-  width: 22.5vmin; /*72px/320px*/
-  height: 22.5vmin; /*72px/320px*/
-  padding: 3.75vmin 1.88vmin; /*12px 6px /320px*/
+  /*box-sizing: border-box;*/
+  width: 22.5%; /*72px/280px*/
+  height: 22.5%; /*72px/280px*/
+  padding: 4.28% 2.14% ; /*12px 6px /320px 3.75vmin 1.88vmin*/
   margin-left: auto;
   margin-right: auto;
-  border-radius: 3.75vmin; /*12px/320px*/
+  border-radius: 21%; /*15px/72px  3.75vmin*/
   background-image: linear-gradient(to bottom, #7751db, #5e3db3, #50329c);
 }
 
 .surface-logo {
-  width: 17.5vmin; /*56px/320px*/
-  height: 15vmin; /*48px/320px*/
+  width: 100%; /*60px/320px 17.5vmin*/
+  /*height: 66.7% ; /*48px/320px 15vmin*/
   fill: #ffffff;
-  text-align: center;
 }
 
 .footer-cta-text {
@@ -382,8 +371,8 @@ h1 {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin-top: 18.75vmin; /*60px/320px*/
-  margin-bottom: 23.75vmin; /*76px/320px*/
+  margin-top: 21.4%; /*60px/320px=18.75vmin*/
+  margin-bottom: 27.1%; /*76px/320px*/
 }
 
 .download-app-action {
@@ -401,7 +390,7 @@ h1 {
 }
 
 .footer .logo-wrapper {
-  margin-top: 25vmin; /*80px/320px*/
+  margin-top: 25%; /*80px/320px*/
 }
 
 
@@ -415,7 +404,7 @@ h1 {
 
   .header-wrapper {
     width: 91.5%; /*703/768px*/
-    max-width: 703px;
+    /*max-width: 703px;*/
   }
 
   .logo-wrapper {
@@ -430,13 +419,13 @@ h1 {
 
   h1 {
     font-size: 8.33vw; /*64/768px*/
-    margin-top: 23.4vw; /*180/768px*/
-    margin-left: 4.5vw; /*35px/768*/
+    margin-top: 25.6%; /*180/703pxx*/
+    margin-left: 5%; /*35px/703*/
   }
 
   .text-align-right {
-    margin-left: 14vw; /*108/768px*/
-    margin-top: 3.9vw; /*30/768px*/
+    margin-left: 15.36%; /*108/703px*/
+    margin-top: 4.3%; /*30/703px*/
   }
 
   .store-buttons {
@@ -461,7 +450,7 @@ h1 {
   }
 
   .btn-text {
-    margin-left: 3.6vw; /*28px/768px*/
+    margin-left: 9%; /*28px/703px*/
     font-size: 1.8vw; /*14px/768*/
   }
 
@@ -469,19 +458,19 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    min-width: 641px;
-    padding-top: 11.2vw; /*86px/768*/
+    /*min-width: 641px;*/
+    padding-top: 11.2%; /*86px/768*/
     overflow: hidden;
   }
 
   .person-name {
-    padding-left: 38vw; /*292/768px*/
+    padding-left: 38%; /*292/768px*/
     margin-bottom: 0;
     font-size: 10.4vw; /*80/768*/
   }
 
   .person-name-two {
-    padding-left: 4.3vw; /*33/768px*/
+    padding-left: 4.3%; /*33/768px*/
   }
 
   .person-content {
@@ -490,8 +479,8 @@ h1 {
   }
 
   .person-content::before {
-    width: 64.7vw; /*497/768px*/
-    height: 91vw; /*699px/768*/
+    width: 64.7%; /*497/768px*/
+    /*height: 91%; /*699px/768*/
     top: -10%; /*px*/
     left: -21%; /*-168px/768*/
     margin-left: 0;
@@ -502,8 +491,8 @@ h1 {
   }
 
   .person-content-two::before {
-    width: 90vw; /*691/768px*/
-    height: 74vw; /*568/768px*/
+    width: 90%; /*691/768px*/
+    /*height: 74vw; /*568/768px*/
     top: -20%; /*px*/
     left: 44%; /*334px/768*/
     background-image: url("../images/basketballer_691.png");
@@ -511,21 +500,21 @@ h1 {
 
   .point {
     max-width: 100%;
-    padding-bottom: 4.9vw; /*38/768px*/
-    padding-top: 5.2vw; /*40/768px*/
+    padding-bottom: 4.9%; /*38/768px*/
+    padding-top: 5.2%; /*40/768px*/
   }
 
   .point-caption {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-left: 38vw; /*292/768px*/
-    padding-right: 4.3vw; /*33/768px*/
+    padding-left: 38%; /*292/768px*/
+    padding-right: 4.3%; /*33/768px*/
   }
 
   .point-caption-two {
-    padding-left: 4.3vw; /*33/768px*/
-    padding-right: 56.7vw; /*436/768px*/
+    padding-left: 4.3%; /*33/768px*/
+    padding-right: 56.7%; /*436/768px*/
   }
 
   .point-number {
@@ -535,10 +524,10 @@ h1 {
 
   .point-number::after,
   .point-number-three::after {
-    top: 3.6vw; /*28/768px*/
-    width: 2.4vw; /*21/768px*/
-    height: 0.52vw; /*4/768px*/
-    border-radius: 1.3vw; /*10/768px*/
+    top: 88%; /*28px*/
+    width: 100%; /*21px*/
+    height: 18%; /*4px*/
+    border-radius: 25%; /*10px*/
   }
 
   .point-dark .point-number::after {
@@ -551,16 +540,16 @@ h1 {
   }
 
   .point-text {
-    margin-top: 3.9vw;  /*30/768px*/
+    margin-top: 3.9%;  /*30/768px*/
     font-size: 2.34vw;  /*18/768px*/
     line-height: 1.5;
-    padding-left: 38vw; /*292px*/
-    padding-right: 4.3vw; /*33px*/
+    padding-left: 38%; /*292px*/
+    padding-right: 4.3%; /*33px*/
   }
 
   .point-text-two {
-    padding-left: 4.3vw; /*33px*/
-    padding-right: 40.4vw; /*310px*/
+    padding-left: 4.3%; /*33px*/
+    padding-right: 40.4%; /*310px*/
   }
 
   .motivation-unit {
@@ -569,24 +558,24 @@ h1 {
   }
   /*ed*/
   .motivation-image {
-    height: 76vw; /*584/768*/
+    height: 76%; /*584/768*/
     overflow: hidden;
   }
 
   .picture {
     max-width: 100%;
-    height: 76vmin;
+    height: 76%;
     background-color: #ffffff;
     overflow: hidden;
   }
 
   .motivation-image-all {
     width: 100%;
-    min-height: 76vmin;
+    /*min-height: 76%;*/
   }
 
   .motivation-content {
-    padding: 11vw 4.3vw 9.8vw; /*85px 33px 75px/768*/
+    padding: 11% 4.3% 9.8%; /*85px 33px 75px/768*/
   }
 
   .motivation-content::before {
@@ -611,7 +600,7 @@ h1 {
   }
 
   .motivation-text {
-    margin-top: 5.2vw; /*40px/768*/
+    margin-top: 5.2%; /*40px/768*/
     font-size: 3.12vw; /*24px/768*/
   }
 
@@ -624,12 +613,12 @@ h1 {
   .footer-container {
     width: 91.5%; /*703/768px*/
     max-width: 703px;
-    padding-top: 16.4vw; /*126/768px*/
-    padding-bottom: 3vw; /*23/768px*/
+    padding-top: 16.4%; /*126/768px*/
+    padding-bottom: 3%; /*23/768px*/
   }
 
   .download-app-logo {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     width: 18.5%; /*130px/703*/
     height: 18.5%; /*130px/703*/
     padding: 3.4% 1.7%; /*24px 12px/768*/
@@ -637,9 +626,9 @@ h1 {
   } /*От 703px*/
 
   .surface-logo {
-    width: 13.5vw; /*104px/768*/
-    height: 11.3vw; /*87px/768*/
-  } /*От 130px*/
+    width: 100%; /*104px/768*/
+    /*height: 11.3vw; /*87px/768*/
+  }
 
   .footer-cta-text {
     margin-top: 11.7%; /*82/703*/
@@ -655,11 +644,11 @@ h1 {
   }
 
   .footer .store-buttons {
-    margin-top: 37.5vw; /*288px/768*/
+    margin-top: 41%; /*288px/768=37.5vw*/
   }
 
   .footer .logo-wrapper {
-    margin-top: 7.16vw; /*55px/768*/
+    margin-top: 7.8%; /*55px/768=7.16vw*/
   }
 
 }
