@@ -17,8 +17,8 @@ a {
 .header {
   width: 100%;
   position: relative;
-  padding-top: 10vw; /*32px/320*/
-  padding-bottom: 26.25vw; /*84px/320*/
+  padding-top: 10%; /*32px/320*/
+  padding-bottom: 26.25%; /*84px/320*/
   background-image: url("../images/football_767.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,7 +74,7 @@ h1 {
 .text-align-right {
   display: block;
   margin-left: 15.7%; /*44px/280px*/
-  margin-top: 9.37vmin; /*30/320 or 30px/280px=10.7% надо ли?*/
+  margin-top: 10.7%; /*30/320 or 30px/280px=10.7% надо ли?*/
 }
 
 .store-buttons {
@@ -96,7 +96,7 @@ h1 {
   height: 12.5%; /*35px/280px*/
   padding: 2.85% 28.57%; /*8px/280px 80px/280px*/
   background-color: #5e42b0;
-  border-radius: 5.6vmin; /*как перевести в проценты? 18/320*/
+  border-radius: 5.6vmin; /*проценты не работают, как правильно перевести? 18/320*/
 }
 
 .btn:nth-of-type(n+2) {
@@ -118,7 +118,6 @@ h1 {
 
 /* Main*/
 /*Section-1*/
-
 .persons {
   max-width: 100%;
 }
@@ -143,16 +142,18 @@ h1 {
   padding-top: 87.8vmin; /*281px/320px*/
 }
 
+.person-content-two {
+  padding-top: 77.5vmin; /*281px/320px*/
+}
+
 .person-content::before {
   content: "";
   position: absolute;
   display: block;
-  width: 87.5vmin; /*280px/320px*/
-  height: 87.8vmin; /*281px/320px*/
+  width: 60%; /*192px/320px*/
+  height: 87.8%; /*281px/320px*/
   top: 0;
-  left: 50%;
-  margin-left: -43.75vmin; /*-140px/320px*/
-  /*left: calc(50%-280px/2);*/
+  left: 20%; /*64px*/
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -164,6 +165,10 @@ h1 {
 
 .person-content-two::before {
   background-image: url("../images/basketballer_302.png");
+  width: 94.3%; /*302px/320px*/
+  height: 77.5%; /*248px/320px*/
+  top: 0;
+  left: 2.8%; /*9px*/
 }
 
 .point {
@@ -218,9 +223,10 @@ h1 {
   background-color: #5e42b0;
 }
 
-.point-dark .point-number::after {
+.point-dark .point-number::after,
+.point-light .point-number::after {
   background-color: #ffffff;
-}
+} /*Правило срабатывает только для первого селектора*/
 
 .point-name {
   margin-left: 2.5vmin; /*8px/320px*/
@@ -574,12 +580,6 @@ h1 {
     background-color: #ffffff;
     overflow: hidden;
   }
-
-  /*..motivation-image-all {
-    /*min-width: 100%;
-    /*left: -32%;
-    height: 109.6vw;
-  }*/
 
   .motivation-image-all {
     width: 100%;
