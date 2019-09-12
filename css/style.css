@@ -202,6 +202,8 @@ h1 {
 
 .point-number {
   position: relative;
+  /*margin-right: vmin; /*12px/320px*/
+  margin-right: 12px; /*10px/320px*/
   font-size: 4.37vmin; /*14px/320px*/
   font-weight: bold;
   line-height: 2.4;
@@ -212,10 +214,12 @@ h1 {
   color: #8765dd;
 }
 
-.point-number::after, .point-number-three::after {
+.point-number::after,
+.point-number-three::after {
   content: "";
   position: absolute;
-  bottom: 3.25%; /*4px/320px*/
+  /*bottom: 3.25%; /*4px/320px*/
+  bottom: -26.75%;
   left: 0;
   width: 100%; /*14px/320px*/
   height: 12.5%; /*4px/320px*/
@@ -226,10 +230,10 @@ h1 {
 .point-dark .point-number::after,
 .point-light .point-number::after {
   background-color: #ffffff;
-} /*Правило срабатывает только для первого селектора*/
+}
 
 .point-name {
-  margin-left: 2.5%; /*8px/320px*/
+  /*margin-left: 2.5%; /*8px/320px*/
   font-size: 7.19vmin; /*23px/320px*/
   font-weight: bold;
   line-height: 1.5;
@@ -524,7 +528,7 @@ h1 {
 
   .point-number::after,
   .point-number-three::after {
-    top: 88%; /*28px*/
+    /*top: 88%; /*28px*/
     width: 100%; /*21px*/
     height: 18%; /*4px*/
     border-radius: 25%; /*10px*/
@@ -636,11 +640,11 @@ h1 {
   }
 
   .download-app-action {
-    font-size: 10.4vw; /*80px/768*/
+    font-size: 5em; /*80px/768*/
   }
 
   .download-app-description {
-    font-size: 4.7vw; /*80px/768*/
+    font-size: 2.25em; /*36px/768*/
   }
 
   .footer .store-buttons {
@@ -800,20 +804,20 @@ h1 {
   }
 
   .point-number {
-    font-size: 0.9vw; /*18/1920px*/
+    font-size: 0.94vw; /*18/1920px*/
   }
 
   .point-number::after,
   .point-number-three::after {
-    top: 1.9vw; /*37px*/
-    width: 0.9vw; /*18px*/
+    top: 1.5vw; /*37px*/
+    width: 1vw; /*18px*/
     height: 0.26vw; /*5px*/
-    border-radius: 4.7vw; /*9px*/
+    border-radius: 25%; /*9px*/
   }
 
   .point-name {
     font-size: 1.88vw; /*36px*/
-    margin-left: 0.73vw; /*14px*/
+    /*margin-left: 0.73vw; /*14px*/
   }
 
   .point-text {
