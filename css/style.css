@@ -615,8 +615,8 @@ h1 {
   }
 
   .footer-container {
-    width: 91.5%; /*703/768px*/
-    max-width: 703px;
+    width: 97.65%; /*750/768px*/
+    /*max-width: 750px;*/
     padding-top: 16.4%; /*126/768px*/
     padding-bottom: 3%; /*23/768px*/
   }
@@ -640,11 +640,11 @@ h1 {
   }
 
   .download-app-action {
-    font-size: 5em; /*80px/768*/
+    font-size: 10.4vw; /*80px/768*/
   }
 
   .download-app-description {
-    font-size: 2.25em; /*36px/768*/
+    font-size: 4.6vw; /*36px/768*/
   }
 
   .footer .store-buttons {
@@ -691,7 +691,7 @@ h1 {
 
   .surface-logo-text {
     width: 100%; /*190px/190*/
-    height: 27.4%; /*52px/190*/
+    height: 100%; /*52px/190*/
   }
 
   h1 {
@@ -721,7 +721,7 @@ h1 {
 
   .btn {
     width: 46.1%; /*310px/672*/
-    height: 11.5%; /*77px/672*/
+    height: 100%; /*77px/672*/
     padding: 2% 6%; /*14px 40px 18px/672*/
     border-radius: 4vw; /*px/*/
     justify-content: center;
