@@ -715,6 +715,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     width: 43.2%; /*672px/1557*/
     margin-top: 14.32%; /*223px/1557*/
   }
