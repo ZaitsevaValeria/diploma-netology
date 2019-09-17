@@ -933,12 +933,22 @@ h1 {
     padding-bottom: 2.6%; /*50px*/
   }
 
+.download-app {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
   .download-app-logo {
     box-sizing: border-box;
     width: 8.3%; /*130px*/
     height: 8.3%; /*130px*/
-    padding: 1.5% 0.8%; /*24px 12px*/
-    border-radius: 12%;  /*16px*/
+    padding: 1% 0.8%; /*24px 12px*/
+    border-radius: 20%;  /*16px*/
+    margin-left: 0;
+    margin-right: 35px;
   }
 
   .surface-logo {
@@ -947,8 +957,8 @@ h1 {
   }
 
   .footer-cta-text {
-    margin-top: 9.6%;  /*150px*/
-    margin-bottom: 16.7%;  /*260px*/
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .download-app-action {
