@@ -707,7 +707,6 @@ h1 {
   .text-align-right {
     display: block;
     margin-left: 29%; /*450px/1557*/
-    /*text-align: right;*/
     margin-top: 1.7%; /*27px/1557*/
   }
 
@@ -717,6 +716,7 @@ h1 {
     justify-content: space-between;
     align-items: flex-start;
     width: 43.2%; /*672px/1557*/
+    height: 4vw;/*77px/1557*/
     margin-top: 14.32%; /*223px/1557*/
   }
 
@@ -936,7 +936,7 @@ h1 {
 .download-app {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
 
 }
@@ -945,10 +945,10 @@ h1 {
     box-sizing: border-box;
     width: 8.3%; /*130px*/
     height: 8.3%; /*130px*/
-    padding: 1% 0.8%; /*24px 12px*/
+    padding: 1.5% 1.5%; /*24px 12px*/
     border-radius: 20%;  /*16px*/
     margin-left: 0;
-    margin-right: 35px;
+    margin-right: 1.8vw; /*35px/1920px*/
   }
 
   .surface-logo {
@@ -959,6 +959,8 @@ h1 {
   .footer-cta-text {
     margin-top: 0;
     margin-bottom: 0;
+    align-items: flex-start;
+
   }
 
   .download-app-action {
